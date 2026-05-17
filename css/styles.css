@@ -278,9 +278,6 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
   position: relative;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 .product-card::before {
   content: '';
