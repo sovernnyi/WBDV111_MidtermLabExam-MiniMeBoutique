@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MiniMe Boutique</title>
 
-  <!-- fonts mwehehw -->
+  <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Tenor+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -22,25 +22,18 @@
 
   <!-- navigation -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <!-- logo / home button (eto yung ginamit ni cloue na logo pa) -->
     <a href="#" class="nav-logo" data-page="home" aria-label="MiniMe Boutique Home">
       Mini<span>Me</span>
     </a>
 
     <ul class="nav-links" role="list">
-
-      <!-- home button - pinakataas na page -->
       <li><a href="#" data-page="home" data-scroll-top="true" aria-label="Home">Home</a></li>
-
-      <!-- shop the collection and shop sets sa store? part ng page (parehas) -->
       <li><a href="#" data-page="home" data-scroll-to="shop" aria-label="Shop Sets">Shop Sets</a></li>
-      <li><a href="#" data-page="about"   aria-label="About Us">About</a></li>
+      <li><a href="#" data-page="about" aria-label="About Us">About</a></li>
       <li><a href="#" data-page="contact" aria-label="Contact Us">Contact</a></li>
-
     </ul>
 
     <div class="nav-actions">
-      <!-- cart icon -->
       <button class="nav-icon-btn" aria-label="View cart" data-page="cart">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -51,8 +44,6 @@
         </svg>
         <span class="cart-badge" aria-live="polite">0</span>
       </button>
-
-      <!-- burger icon para sa mobile (not sure if working!) -->
       <button class="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -91,14 +82,12 @@
 
       <div class="products-grid" role="list">
 
-        <!-- 1. Sandea -->
+        <!-- 1. Sandra -->
         <article class="product-card" role="listitem" data-product="sandra"
                  tabindex="0" aria-label="Sandra Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-gold">SANDRA</span>
-  
-            <img src="images/sandra.png"
-                 alt="Sandra Family Set — floral pink matching outfits"/>
+            <img src="images/sandra.png" alt="Sandra Family Set — floral pink matching outfits"/>
           </div>
           <div class="product-info">
             <div class="product-name-row">
@@ -112,7 +101,7 @@
               <span>Dad: ₱345</span>
               <span>Son: ₱245</span>
             </div>
-            <button class="product-add-btn" aria-label="Add Ellery Family Set to cart"
+            <button class="product-add-btn" aria-label="Add Sandra Family Set to cart"
                     onclick="event.stopPropagation(); addToCart(PRODUCTS['sandra'])">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                    fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -130,8 +119,7 @@
                  tabindex="0" aria-label="Krizzel Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-pink">KRIZZEL</span>
-            <img src="images/krizzel.png"
-                 alt="Krizzel Family Set — white cotton linen matching outfits" />
+            <img src="images/krizzel.png" alt="Krizzel Family Set — white cotton linen matching outfits" />
           </div>
           <div class="product-info">
             <div class="product-name-row">
@@ -163,8 +151,7 @@
                  tabindex="0" aria-label="Mia Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-brown">MIA</span>
-            <img src="images/mia.png"
-                 alt="Mia Family Set — soft khaki embroidery matching outfits" />
+            <img src="images/mia.png" alt="Mia Family Set — flower embroidery matching outfits" />
           </div>
           <div class="product-info">
             <div class="product-name-row">
@@ -196,15 +183,14 @@
                  tabindex="0" aria-label="Eula Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-gold">EULA</span>
-            <img src="images/eula.png"
-                 alt="Eula Family Set — baby blue linen matching outfits">
-          </div> 
+            <img src="images/eula.png" alt="Eula Family Set — baby blue linen matching outfits">
+          </div>
           <div class="product-info">
             <div class="product-name-row">
               <h3 class="product-name font-serif">Eula Family Set</h3>
               <span class="product-price font-serif">₱1,160</span>
             </div>
-            <p class="product-material">Linen • Baby blue</p>
+            <p class="product-material">Linen • Baby Blue</p>
             <div class="product-divider"></div>
             <div class="product-breakdown">
               <span>Mom &amp; Daughter: ₱815</span>
@@ -229,8 +215,7 @@
                  tabindex="0" aria-label="Olivia Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-pink">OLIVIA</span>
-            <img src="images/olivia.png"
-                 alt="Olivia Family Set — sage green cotton matching outfits" />
+            <img src="images/olivia.png" alt="Olivia Family Set — peach cotton floral matching outfits" />
           </div>
           <div class="product-info">
             <div class="product-name-row">
@@ -262,8 +247,7 @@
                  tabindex="0" aria-label="Ellery Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-brown">ELLERY</span>
-            <img src="images/ellery.png"
-                 alt="Ellery Family Set — dusty blue linen matching outfits"/>
+            <img src="images/ellery.png" alt="Ellery Family Set — pastel yellow linen matching outfits"/>
           </div>
           <div class="product-info">
             <div class="product-name-row">
@@ -295,12 +279,11 @@
                  tabindex="0" aria-label="Paula Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-gold">PAULA</span>
-            <img src="images/paula.png"
-                 alt="Paula Family Set — ivory embroidery matching outfits"/>
+            <img src="images/paula.png" alt="Paula Family Set — dusty pink cotton matching outfits"/>
           </div>
           <div class="product-info">
             <div class="product-name-row">
-              <h3 class="product-name font-serif">Puala Family Set</h3>
+              <h3 class="product-name font-serif">Paula Family Set</h3>
               <span class="product-price font-serif">₱1,130</span>
             </div>
             <p class="product-material">Cotton • Dusty Pink</p>
@@ -328,8 +311,7 @@
                  tabindex="0" aria-label="Pinky Coords Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-pink">PINKY COORDS</span>
-            <img src="images/pinky.png"
-                 alt="Iris Family Set — purple linen matching outfits"/>
+            <img src="images/pinky.png" alt="Pinky Coords Family Set — purple linen matching outfits"/>
           </div>
           <div class="product-info">
             <div class="product-name-row">
@@ -361,8 +343,7 @@
                  tabindex="0" aria-label="Ailah Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-brown">AILAH</span>
-            <img src="images/ailah.png"
-                 alt="Ailah Family Set — green cotton matching outfits"/>
+            <img src="images/ailah.png" alt="Ailah Family Set — green cotton matching outfits"/>
           </div>
           <div class="product-info">
             <div class="product-name-row">
@@ -394,8 +375,7 @@
                  tabindex="0" aria-label="Althea Family Set — click to view details">
           <div class="product-img-wrap">
             <span class="product-badge badge-gold">ALTHEA</span>
-            <img src="images/althea.png"
-                 alt="Althea Family Set — pink cotton matching outfits">
+            <img src="images/althea.png" alt="Althea Family Set — holiday red cotton matching outfits">
           </div>
           <div class="product-info">
             <div class="product-name-row">
@@ -425,7 +405,7 @@
       </div><!-- products-grid -->
     </section>
 
-    <!-- atelierrrr -->
+    <!-- atelier -->
     <section id="atelier" class="atelier-section" aria-labelledby="atelier-heading">
       <div class="atelier-content">
         <span class="atelier-eyebrow">Our Boutique Story</span>
@@ -456,12 +436,11 @@
         </div>
       </div>
       <div class="atelier-image">
-        <img src="images/atelier.jpg"
-             alt="MiniMe boutique"/>
+        <img src="images/atelier.jpg" alt="MiniMe boutique"/>
       </div>
     </section>
 
-    <!-- happy fam galeries hehe -->
+    <!-- happy families gallery -->
     <section id="families" class="families-section" aria-labelledby="families-heading">
       <div class="section-header">
         <span class="section-eyebrow">Sharing the Joy of Matching</span>
@@ -470,27 +449,23 @@
       </div>
       <div class="families-grid" role="list">
         <div class="family-card" role="listitem">
-          <img src="images/fam1.png"
-               alt="Happy family wearing matching MiniMe outfits together"/>
+          <img src="images/fam1.png" alt="Happy family wearing matching MiniMe outfits together"/>
         </div>
         <div class="family-card" role="listitem">
-          <img src="images/fam2.png"
-               alt="Family in coordinated MiniMe collection outfits" />
+          <img src="images/fam2.png" alt="Family in coordinated MiniMe collection outfits" />
         </div>
         <div class="family-card" role="listitem">
-          <img src="images/fam3.png"
-               alt="Parents and children in matching MiniMe sets" />
+          <img src="images/fam3.png" alt="Parents and children in matching MiniMe sets" />
         </div>
         <div class="family-card" role="listitem">
-          <img src="images/fam4.png"
-               alt="Smiling family modeling MiniMe boutique outfits"/>
+          <img src="images/fam4.png" alt="Smiling family modeling MiniMe boutique outfits"/>
         </div>
       </div>
     </section>
 
   </main><!-- page-home -->
 
-  <!-- CHECKOUT/CART PAGE -->
+  <!-- CART PAGE -->
   <main id="page-cart" class="page hidden">
     <div class="page-hero">
       <h1 class="page-hero-title font-serif">Your Cart</h1>
@@ -560,7 +535,7 @@
     </div>
   </main>
 
-  <!--  ABOUT PAGE -->
+  <!-- ABOUT PAGE -->
   <main id="page-about" class="page hidden">
     <div class="page-hero">
       <h1 class="page-hero-title font-serif">Our Story</h1>
@@ -625,13 +600,12 @@
         </div>
       </div>
       <div class="about-img-side">
-        <img src="images/atelier.jpg"
-             alt="MiniMe boutique" />
+        <img src="images/atelier.jpg" alt="MiniMe boutique" />
       </div>
     </section>
   </main>
 
-  <!--  CONTACT PAGE  -->
+  <!-- CONTACT PAGE -->
   <main id="page-contact" class="page hidden">
     <div class="page-hero">
       <h1 class="page-hero-title font-serif">Get in Touch</h1>
@@ -704,7 +678,7 @@
         </div>
       </div>
 
-      <!-- contact form (via mailto) -->
+      <!-- contact form -->
       <div class="contact-form-col">
         <form class="contact-form" id="contact-form" onsubmit="handleContact(event)"
               aria-label="Contact form" novalidate>
@@ -714,11 +688,13 @@
             <label for="contact-name" class="form-label">Full Name</label>
             <input type="text" id="contact-name" name="name" class="form-input"
                    placeholder="Your name" required aria-required="true" />
+            <div class="field-error" id="err-contact-name">Please enter your full name.</div>
           </div>
           <div class="form-group">
             <label for="contact-email" class="form-label">Email Address</label>
             <input type="email" id="contact-email" name="email" class="form-input"
                    placeholder="your@email.com" required aria-required="true" />
+            <div class="field-error" id="err-contact-email">Please enter a valid email address.</div>
           </div>
           <div class="form-group">
             <label for="contact-subject" class="form-label">Subject</label>
@@ -729,6 +705,7 @@
             <label for="contact-message" class="form-label">Message</label>
             <textarea id="contact-message" name="message" class="form-textarea"
                       placeholder="Tell us how we can help you…" required aria-required="true"></textarea>
+            <div class="field-error" id="err-contact-message">Please enter your message.</div>
           </div>
 
           <button type="submit" class="form-submit-btn" aria-label="Send message">
@@ -744,7 +721,7 @@
     </section>
   </main>
 
-  <!--  FOOTER  -->
+  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="footer-grid">
       <div>
@@ -800,7 +777,7 @@
     </div>
   </footer>
 
-  <!--  PRODUCT DETAIL MODAL  -->
+  <!-- PRODUCT DETAIL MODAL -->
   <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true"
        aria-label="Product details">
     <div class="modal-box">
@@ -819,19 +796,34 @@
           <span id="modal-colorway" class="modal-colorway"></span>
           <h2 id="modal-title" class="modal-title font-serif"></h2>
           <p id="modal-price" class="modal-price font-serif"></p>
-          <span class="modal-details-label">Item Informations</span>
+
+          <!-- Description -->
+          <p id="modal-description" class="modal-description"></p>
+
+          <span class="modal-details-label">Item Information</span>
           <ul id="modal-details-list" class="modal-details-list" role="list"></ul>
         </div>
         <div>
-          <div style="margin-bottom:8px; font-family:'Montserrat',sans-serif; font-size:8.5px;
-                      font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:var(--text-soft);">
-            Quantity
+          <!-- Variant selector -->
+          <div class="modal-select-label">Select Variant</div>
+          <div id="modal-variant-wrap" class="modal-pills-wrap"></div>
+          <div id="modal-variant-error" class="field-error">Please select a variant before adding to cart.</div>
+
+          <!-- Size selector -->
+          <div id="modal-size-group" style="display:none; margin-top:16px;">
+            <div class="modal-select-label">Select Size</div>
+            <div id="modal-size-wrap" class="modal-pills-wrap"></div>
+            <div id="modal-size-error" class="field-error">Please select a size.</div>
           </div>
+
+          <!-- Quantity -->
+          <div class="modal-select-label" style="margin-top:18px;">Quantity</div>
           <div class="qty-selector" role="group" aria-label="Quantity selector">
             <button class="qty-btn" onclick="changeModalQty(-1)" aria-label="Decrease quantity">−</button>
             <span id="modal-qty-display" class="qty-display" aria-live="polite">1</span>
             <button class="qty-btn" onclick="changeModalQty(1)" aria-label="Increase quantity">+</button>
           </div>
+
           <button class="modal-add-btn" onclick="modalAddToCart()" aria-label="Add to cart">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                  fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -879,23 +871,23 @@
         <div class="checkout-form-grid">
           <div class="form-group">
             <label class="form-label">First Name</label>
-            <input type="text" id="co-fname" class="form-input" placeholder="Cheska" required />
+            <input type="text" id="co-fname" class="form-input" placeholder="Cheska" />
+            <div class="field-error" id="err-fname">First name is required.</div>
           </div>
           <div class="form-group">
             <label class="form-label">Last Name</label>
-            <input type="text" id="co-lname" class="form-input" placeholder="Santos" required />
+            <input type="text" id="co-lname" class="form-input" placeholder="Santos" />
+            <div class="field-error" id="err-lname">Last name is required.</div>
           </div>
-          
           <div class="form-group" style="grid-column:1/-1">
             <label class="form-label">Email Address</label>
-            <input type="email" id="co-email" class="form-input" placeholder="your@email.com" required />
-                  <!-- Error message placeholder -->
-            <div id="email-error" style="color: #d9534f; font-size: 10px; margin-top: 5px; display: none;">Please enter a valid email address with @.</div>
+            <input type="email" id="co-email" class="form-input" placeholder="your@email.com" />
+            <div class="field-error" id="err-email">Please enter a valid email address with @.</div>
           </div>
-          
           <div class="form-group" style="grid-column:1/-1">
             <label class="form-label">Phone Number</label>
-            <input type="tel" id="co-phone" class="form-input" placeholder="63 9XX XXX XXXX" required />
+            <input type="tel" id="co-phone" class="form-input" placeholder="63 9XX XXX XXXX" />
+            <div class="field-error" id="err-phone">Phone number is required.</div>
           </div>
         </div>
         <button class="checkout-next-btn" onclick="checkoutStep(2)">
@@ -910,61 +902,51 @@
       <!-- Step 2: Shipping Details -->
       <div id="checkout-step-2" class="checkout-step-panel hidden">
         <h2 class="checkout-title font-serif">Shipping Address</h2>
-          <div class="checkout-form-grid">
-          
-          <!-- Region Selection -->
+        <div class="checkout-form-grid">
           <div class="form-group">
-      <label class="form-label">Region</label>
-       <select id="co-region" class="form-input" onchange="updateProvinces()">
-         <option value="" disabled selected>Select Region</option>
-         <option value="NCR">NCR</option>
-         <option value="Region IV-A (CALABARZON)">Region IV-A (CALABARZON)</option>
-         <option value="Region III (Central Luzon)">Region III (Central Luzon)</option>
-         <option value="Region I (Ilocos Region)">Region I (Ilocos Region)</option>
-       </select>
-    </div>
-
-          <!-- Province Selection -->
+            <label class="form-label">Region</label>
+            <select id="co-region" class="form-input" onchange="updateProvinces()">
+              <option value="" disabled selected>Select Region</option>
+              <option value="NCR">NCR</option>
+              <option value="Region IV-A (CALABARZON)">Region IV-A (CALABARZON)</option>
+              <option value="Region III (Central Luzon)">Region III (Central Luzon)</option>
+              <option value="Region I (Ilocos Region)">Region I (Ilocos Region)</option>
+            </select>
+            <div class="field-error" id="err-region">Please select a region.</div>
+          </div>
           <div class="form-group">
             <label class="form-label">Province</label>
-            <select id="co-province" class="form-input" onchange="updateCities()" required>
-            <option value="" disabled selected>Select Province</option>
-           </select>
+            <select id="co-province" class="form-input" onchange="updateCities()">
+              <option value="" disabled selected>Select Province</option>
+            </select>
+            <div class="field-error" id="err-province">Please select a province.</div>
           </div>
-
-          <!-- City Selection  -->
           <div class="form-group">
             <label class="form-label">City / Municipality</label>
-            <select id="co-city" class="form-input" onchange="updateZip()" required>
-            <option value="" disabled selected>Select City</option>
+            <select id="co-city" class="form-input" onchange="updateZip()">
+              <option value="" disabled selected>Select City</option>
             </select>
-           </div>
-
-          <!-- ZIP Code Automatic -->
+            <div class="field-error" id="err-city">Please select a city.</div>
+          </div>
           <div class="form-group">
             <label class="form-label">ZIP Code</label>
             <input type="text" id="co-zip" class="form-input" placeholder="Zip" readonly />
           </div>
-
-          <!-- Street Address -->
           <div class="form-group" style="grid-column: 1 / -1">
             <label class="form-label">Street Address</label>
-            <input type="text" id="co-address" class="form-input" placeholder="House No., Street, Barangay" required />
+            <input type="text" id="co-address" class="form-input" placeholder="House No., Street, Barangay" />
+            <div class="field-error" id="err-address">Street address is required.</div>
           </div>
-
-          <!-- Order Notes -->
           <div class="form-group" style="grid-column: 1 / -1">
-           <label class="form-label">Order Notes (optional)</label>
-           <textarea id="co-notes" class="form-textarea" style="min-height:80px" placeholder="Special instructions..."></textarea>
+            <label class="form-label">Order Notes (optional)</label>
+            <textarea id="co-notes" class="form-textarea" style="min-height:80px" placeholder="Special instructions..."></textarea>
           </div>
-          </div> 
-
-        <!-- Navigation Buttons -->
+        </div>
         <div class="checkout-btn-row">
           <button class="checkout-back-btn" onclick="checkoutStep(1)">← Back</button>
-          <button class="checkout-next-btn" onclick="checkoutStep(3)"> Review Order </button>
-         </div>
+          <button class="checkout-next-btn" onclick="checkoutStep(3)">Review Order</button>
         </div>
+      </div>
 
       <!-- Step 3: Order Review & Confirm -->
       <div id="checkout-step-3" class="checkout-step-panel hidden">
@@ -979,12 +961,12 @@
               <input type="radio" name="payment" value="gcash" checked />
               <span>GCash</span>
             </label>
-            
             <label class="payment-option">
               <input type="radio" name="payment" value="cod" />
               <span>Cash on Delivery</span>
             </label>
           </div>
+        </div><!-- end form-group -->
 
         <div class="checkout-btn-row">
           <button class="checkout-back-btn" onclick="checkoutStep(2)">← Back</button>
@@ -1000,31 +982,30 @@
 
       <!-- Success -->
       <div id="checkout-step-success" class="checkout-step-panel hidden checkout-success">
-    <div class="success-icon">🎉</div>
-    <h2 class="checkout-title font-serif">Order Confirmed!</h2>
-    <p class="success-body">Thank you! Your order has been placed. We'll send a confirmation to your email.</p>
-    
-    <!-- DETAILS -->
-    <div id="order-tracking-info" class="order-summary-display">
-        <div class="summary-details">
+        <div class="success-icon">🎉</div>
+        <h2 class="checkout-title font-serif">Order Confirmed!</h2>
+        <p class="success-body">Thank you! Your order has been placed. We'll send a confirmation to your email.</p>
+        <div id="order-tracking-info" class="order-summary-display">
+          <div class="summary-details">
             <p><strong>Order Number:</strong> <span id="res-order-num"></span></p>
             <p><strong>Items:</strong> <span id="res-items"></span></p>
             <p><strong>Total Amount:</strong> <span id="res-total"></span></p>
             <p><strong>Payment:</strong> <span id="res-payment"></span></p>
+          </div>
         </div>
-    </div>
+        <p class="success-note font-serif">
+          We'll contact you within 24 hours with your tracking details.<br/>
+          Follow us on Instagram <strong>@minime_cg</strong> for updates!
+        </p>
+        <button class="checkout-next-btn" onclick="closeCheckoutModal(); showPage('home')">
+          Continue Shopping
+        </button>
+      </div>
 
-    <p class="success-note font-serif">
-        We'll contact you within 24 hours with your tracking details.<br/>
-        Follow us on Instagram <strong>@minime_cg</strong> for updates!
-    </p>
-    
-    <button class="checkout-next-btn" onclick="closeCheckoutModal(); showPage('home')">
-        Continue Shopping
-    </button>
-</div>
-        
-  <!-- TOAST -->
+    </div>
+  </div><!-- end checkout-overlay -->
+
+  <!-- TOAST — must be outside all modals -->
   <div id="toast" class="toast" role="alert" aria-live="assertive">
     <div class="toast-icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
