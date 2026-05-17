@@ -837,6 +837,7 @@ Sent via MiniMe Boutique website.`
 
 // ─── LOCATION DROPDOWNS
 const locationData = {
+  // LUZON
   'NCR': {
     provinces: {
       'Metro Manila': { cities: { 'Caloocan': '1400', 'Las Piñas': '1740', 'Makati': '1200', 'Malabon': '1470', 'Mandaluyong': '1550', 'Manila': '1000', 'Marikina': '1800', 'Muntinlupa': '1770', 'Navotas': '1485', 'Parañaque': '1700', 'Pasay': '1300', 'Pasig': '1600', 'Pateros': '1620', 'Quezon City': '1100', 'San Juan': '1500', 'Taguig': '1630', 'Valenzuela': '1440' } }
@@ -852,7 +853,7 @@ const locationData = {
       'Mountain Province': { cities: { 'Bontoc': '2616', 'Sagada': '2619', 'Bauko': '2621', 'Besao': '2618' } }
     }
   },
-  'Region V (Bicol Region)': {
+  'Region V (Bicol)': {
     provinces: {
       'Albay':           { cities: { 'Legazpi': '4500', 'Ligao': '4504', 'Tabaco': '4511', 'Daraga': '4501' } },
       'Camarines Norte': { cities: { 'Daet': '4600', 'Labo': '4604', 'Paracale': '4605', 'Vinzons': '4603' } },
@@ -862,7 +863,7 @@ const locationData = {
       'Sorsogon':        { cities: { 'Sorsogon City': '4700', 'Bulan': '4706', 'Donsol': '4715', 'Gubat': '4710' } }
     }
   },
-  'MIMAROPA Region': {
+  'MIMAROPA': {
     provinces: {
       'Occidental Mindoro': { cities: { 'Mamburao': '5106', 'San Jose': '5100', 'Sablayan': '5104', 'Lubang': '5109' } },
       'Oriental Mindoro':   { cities: { 'Calapan': '5200', 'Puerto Galera': '5203', 'Pinamalayan': '5208', 'Roxas': '5212' } },
@@ -896,12 +897,94 @@ const locationData = {
       'Quirino':       { cities: { 'Cabarroguis': '3400', 'Maddela': '3404', 'Diffun': '3401' } }
     }
   },
-  'Region I (Ilocos Region)': {
+  'Region I (Ilocos)': {
     provinces: {
       'Ilocos Norte': { cities: { 'Laoag': '2900', 'Batac': '2906', 'Paoay': '2910', 'Pagudpud': '2919' } },
       'Ilocos Sur':   { cities: { 'Vigan': '2700', 'Candon': '2710', 'Santa': '2703', 'Caoayan': '2702' } },
       'La Union':     { cities: { 'San Fernando': '2500', 'Bauang': '2501', 'Agoo': '2504', 'Naguilian': '2511' } },
       'Pangasinan':   { cities: { 'Dagupan': '2400', 'Urdaneta': '2428', 'San Carlos': '2420', 'Lingayen': '2401', 'Alaminos': '2404' } }
+    }
+  },
+  //VISAYAS
+  'Region VI (Western Visayas)': {
+    provinces: {
+      'Aklan':           { cities: { 'Kalibo': '5600', 'Malay': '5608', 'Numancia': '5604', 'Banga': '5601', 'Ibajay': '5605' } },
+      'Antique':         { cities: { 'San Jose de Buenavista': '5700', 'Hamtic': '5701', 'Culasi': '5708', 'Sibalom': '5702' } },
+      'Capiz':           { cities: { 'Roxas City': '5800', 'Panay': '5801', 'Pontevedra': '5802', 'Dumalag': '5813' } },
+      'Guimaras':        { cities: { 'Jordan': '5045', 'Buenavista': '5044', 'Nueva Valencia': '5046' } },
+      'Iloilo':          { cities: { 'Iloilo City': '5000', 'Oton': '5020', 'Passi City': '5037', 'Pavia': '5001', 'Santa Barbara': '5002', 'Dumangas': '5006' } },
+      'Negros Occidental': { cities: { 'Bacolod City': '6100', 'Talisay City': '6115', 'Silay City': '6116', 'Bago City': '6101', 'Kabankalan City': '6111', 'San Carlos City': '6127', 'Victorias City': '6119' } }
+    }
+  },
+  'Region VII (Central Visayas)': {
+    provinces: {
+      'Bohol':           { cities: { 'Tagbilaran City': '6300', 'Panglao': '6340', 'Carmen': '6319', 'Talibon': '6325', 'Jagna': '6308', 'Tubigon': '6329' } },
+      'Cebu':            { cities: { 'Cebu City': '6000', 'Mandaue City': '6014', 'Lapu-Lapu City': '6015', 'Talisay City': '6045', 'Danao City': '6004', 'Toledo City': '6038', 'Carcar City': '6019', 'Consolacion': '6001', 'Liloan': '6002' } },
+      'Negros Oriental': { cities: { 'Dumaguete City': '6200', 'Bayawan City': '6221', 'Guihulngan City': '6214', 'Tanjay City': '6204', 'Bais City': '6206', 'Siaton': '6217' } },
+      'Siquijor':        { cities: { 'Siquijor': '6225', 'Larena': '6226', 'Lazi': '6228', 'San Juan': '6227' } }
+    }
+  },
+  'Region VIII (Eastern Visayas)': {
+    provinces: {
+      'Biliran':         { cities: { 'Naval': '6543', 'Caibiran': '6544', 'Biliran': '6549', 'Kawayan': '6545' } },
+      'Eastern Samar':   { cities: { 'Borongan City': '6800', 'Guiuan': '6809', 'Dolores': '6817', 'Oras': '6818' } },
+      'Leyte':           { cities: { 'Tacloban City': '6500', 'Ormoc City': '6541', 'Baybay City': '6521', 'Palo': '6501', 'Tanauan': '6502', 'Abuyog': '6510' } },
+      'Northern Samar':  { cities: { 'Catarman': '6400', 'Laoang': '6411', 'Allen': '6405', 'Catubig': '6418' } },
+      'Samar':           { cities: { 'Catbalogan City': '6700', 'Calbayog City': '6710', 'Basey': '6702', 'Gandara': '6706' } },
+      'Southern Leyte':  { cities: { 'Maasin City': '6600', 'Sogod': '6606', 'Liloan': '6612', 'Hinunangan': '6608' } }
+    }
+  },
+  //Mindanao
+  'Region IX (Zamboanga Peninsula)': {
+    provinces: {
+      'Zamboanga del Norte': { cities: { 'Dipolog City': '7100', 'Dapitan City': '7101', 'Sindangan': '7112', 'Labason': '7117' } },
+      'Zamboanga del Sur':   { cities: { 'Pagadian City': '7016', 'Zamboanga City': '7000', 'Labangan': '7017', 'Molave': '7023' } },
+      'Zamboanga Sibugay':   { cities: { 'Ipil': '7001', 'Titay': '7003', 'Roseller Lim': '7002', 'Kabasalan': '7005' } }
+    }
+  },
+  'Region X (Northern Mindanao)': {
+    provinces: {
+      'Bukidnon':           { cities: { 'Malaybalay City': '8700', 'Valencia City': '8709', 'Manolo Fortich': '8703', 'Maramag': '8714', 'Quezon': '8715' } },
+      'Camiguin':           { cities: { 'Mambajao': '9100', 'Mahinog': '9101', 'Sagay': '9103', 'Catarman': '9102' } },
+      'Lanao del Norte':    { cities: { 'Iligan City': '9200', 'Tubod': '9209', 'Lala': '9211', 'Kapatagan': '9214' } },
+      'Misamis Occidental': { cities: { 'Oroquieta City': '7207', 'Ozamiz City': '7200', 'Tangub City': '7214', 'Jimenez': '7204' } },
+      'Misamis Oriental':   { cities: { 'Cagayan de Oro City': '9000', 'Gingoog City': '9014', 'El Salvador City': '9017', 'Tagoloan': '9001', 'Villanueva': '9002' } }
+    }
+  },
+  'Region XI (Davao)': {
+    provinces: {
+      'Davao de Oro':    { cities: { 'Nabunturan': '8800', 'Compostela': '8803', 'Monkayo': '8805', 'Pantukan': '8809' } },
+      'Davao del Norte': { cities: { 'Tagum City': '8100', 'Panabo City': '8105', 'Samal City': '8119', 'Carmen': '8101', 'Sto. Tomas': '8112' } },
+      'Davao del Sur':   { cities: { 'Davao City': '8000', 'Digos City': '8002', 'Santa Cruz': '8001', 'Bansalan': '8005' } },
+      'Davao Occidental':{ cities: { 'Malita': '8012', 'Don Marcelino': '8013', 'Jose Abad Santos': '8014' } },
+      'Davao Oriental':  { cities: { 'Mati City': '8200', 'Lupon': '8207', 'Baganga': '8204', 'Governor Generoso': '8210' } }
+    }
+  },
+  'Region XII (SOCCSKSARGEN)': {
+    provinces: {
+      'Cotabato':       { cities: { 'Kidapawan City': '9400', 'Midsayap': '9410', 'Kabacan': '9407', 'Carmen': '9408' } },
+      'Sarangani':      { cities: { 'Alabel': '9501', 'Glan': '9517', 'Kiamba': '9514', 'Maasim': '9502' } },
+      'South Cotabato': { cities: { 'General Santos City': '9500', 'Koronadal City': '9506', 'Polomolok': '9504', 'Surallah': '9512', 'Tupi': '9505' } },
+      'Sultan Kudarat': { cities: { 'Isulan': '9805', 'Tacurong City': '9800', 'Esperanza': '9806', 'Lebak': '9807' } }
+    }
+  },
+  'Region XIII (Caraga)': {
+    provinces: {
+      'Agusan del Norte': { cities: { 'Butuan City': '8600', 'Cabadbaran City': '8605', 'Nasipit': '8602', 'Magallanes': '8604' } },
+      'Agusan del Sur':   { cities: { 'Prosperidad': '8500', 'San Francisco': '8501', 'Bayugan City': '8502', 'Bunawan': '8506' } },
+      'Dinagat Islands':  { cities: { 'San Jose': '8427', 'Loreto': '8428', 'Cagdianao': '8426' } },
+      'Surigao del Norte':{ cities: { 'Surigao City': '8400', 'Siargao (Dapa)': '8419', 'Placer': '8405', 'Claver': '8404' } },
+      'Surigao del Sur':  { cities: { 'Tandag City': '8300', 'Bislig City': '8311', 'Lianga': '8307', 'Hinatuan': '8310', 'Cantilan': '8303' } }
+    }
+  },
+  'BARMM': {
+    provinces: {
+      'Basilan':         { cities: { 'Isabela City': '7300', 'Lamitan City': '7302', 'Maluso': '7303', 'Sumisip': '7305' } },
+      'Lanao del Sur':   { cities: { 'Marawi City': '9700', 'Wao': '9716', 'Balindong': '9703', 'Malabang': '9712' } },
+      'Maguindanao del Norte': { cities: { 'Cotabato City': '9600', 'Datu Odin Sinsuat': '9601', 'Parang': '9604' } },
+      'Maguindanao del Sur':   { cities: { 'Buluan': '9628', 'Sultan Kudarat': '9600', 'Shariff Aguak': '9608' } },
+      'Sulu':            { cities: { 'Jolo': '7400', 'Parang': '7404', 'Indanan': '7407', 'Talipao': '7409' } },
+      'Tawi-Tawi':       { cities: { 'Bongao': '7500', 'Sitangkai': '7506', 'Panglima Sugala': '7501' } }
     }
   }
 };
