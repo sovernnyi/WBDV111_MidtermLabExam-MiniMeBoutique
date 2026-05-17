@@ -1,4 +1,4 @@
-/* MiniMe Boutique — app.js */
+/* MiniMe Boutique — app.js (fixed) */
 
 // ─── CART STATE
 let cart;
@@ -22,7 +22,6 @@ function updateCartBadges() {
 }
 
 function addToCart(product) {
-  // For quick-add from product card (no variant), use base product
   const key = product.cartKey || product.id;
   const existing = cart.find(i => i.cartKey === key);
   if (existing) {
@@ -60,13 +59,13 @@ const PRODUCTS = {
     badge: 'SANDRA SET',
     badgeClass: 'badge-gold',
     img: 'images/sandra.png',
-    description: 'The Sandra set features a delicate floral print in soft peach pink — perfect for family portraits and special occasions. Light and breathable, it drapes beautifully on every body type.',
+    description: 'The Sandra set features a delicate floral print in soft peach pink — perfect for family portraits and special occasions. Light and breathable, it drapes beautifully on every body type. Also available in Purple, Denim Blue, and Yellow.',
     breakdown: [['Mom & Daughter', '₱825'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Peach Pink, Purple, Denim Blue, Yellow',
-      'Mom Size: Small - XL',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Large - XXL'
+      'Mom Size: Small – XL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Large – XXL'
     ],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L', 'XL'], price: 825 },
@@ -83,13 +82,13 @@ const PRODUCTS = {
     badge: 'KRIZZEL',
     badgeClass: 'badge-pink',
     img: 'images/krizzel.png',
-    description: 'Clean, crisp white cotton linen for the whole family. The Krizzel twin set is our most versatile collection — effortlessly elegant for beach trips, family events, or Sunday outings.',
+    description: 'Clean, crisp white cotton linen for the whole family. The Krizzel twin set is our most versatile collection — effortlessly elegant for beach trips, family events, or Sunday outings. Also available in Indigo, Purple, Red, and Forest Green.',
     breakdown: [['Twin Set (Mom)', '₱815'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Indigo, Purple, Red, Forest Green',
-      'Mom Size: Medium - XXL',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Medium - XXL'
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
     ],
     variants: {
       'Twin Set (Mom & Daughter)': { sizes: ['M', 'L', 'XL', 'XXL'], price: 815 },
@@ -106,18 +105,18 @@ const PRODUCTS = {
     badge: 'MIA',
     badgeClass: 'badge-brown',
     img: 'images/mia.png',
-    description: 'Sophisticated black with hand-inspired flower embroidery. The Mia set makes a bold statement — timeless, elegant, and completely unforgettable in photos.',
+    description: 'Sophisticated black with hand-inspired flower embroidery. The Mia set makes a bold statement — timeless, elegant, and completely unforgettable in photos. Available in Nude, White, Black, and Red.',
     breakdown: [['Mom & Daughter', '₱795'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Nude, White, Black, Red',
-      'Mom Size: Small - Large',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Medium - XXL'
+      'Mom Size: Small – Large',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
     ],
     variants: {
-      'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],       price: 795 },
+      'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],         price: 795 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
-      "Son's Set":          { sizes: ['S', 'M', 'L'],       price: 245 }
+      "Son's Set":          { sizes: ['S', 'M', 'L'],         price: 245 }
     }
   },
   eula: {
@@ -129,13 +128,13 @@ const PRODUCTS = {
     badge: 'EULA',
     badgeClass: 'badge-gold',
     img: 'images/eula.png',
-    description: 'Soft blush pink linen that catches the light beautifully. The Eula set is airy, romantic, and perfect for golden hour family shoots or intimate celebrations.',
+    description: 'Soft blush pink linen that catches the light beautifully. The Eula set is airy, romantic, and perfect for golden hour family shoots or intimate celebrations. Also available in Yellow, Red, White, Blue, and Purple.',
     breakdown: [['Mom & Daughter', '₱815'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Yellow, Red, White, Pink, Blue, Purple',
-      'Mom Size: Small - Large',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Medium - XXL'
+      'Mom Size: Small – Large',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
     ],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],         price: 815 },
@@ -152,13 +151,13 @@ const PRODUCTS = {
     badge: 'OLIVIA',
     badgeClass: 'badge-pink',
     img: 'images/olivia.png',
-    description: 'Fresh peach cotton floral with a cottagecore spirit. Olivia is made for families who love nature, warmth, and outfits that feel as good as they look.',
+    description: 'Fresh peach cotton floral with a cottagecore spirit. Olivia is made for families who love nature, warmth, and outfits that feel as good as they look. Available in Red, Blue, Purple, Pink, Green, and Orange.',
     breakdown: [['Mom & Daughter', '₱815'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Red, Blue, Peach, Purple, Pink, Green, Orange',
-      'Mom Size: Medium - XXL',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Medium - XXL'
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
     ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 815 },
@@ -179,9 +178,9 @@ const PRODUCTS = {
     breakdown: [['Mom & Daughter', '₱835'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Red, Peach, Green, Yellow, White, Pink, Pastel Blue, Royal Blue, Purple, Cream, Black, Fuschia Pink',
-      'Mom Size: Medium - XXL',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Medium - XXL'
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
     ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 835 },
@@ -198,13 +197,13 @@ const PRODUCTS = {
     badge: 'PAULA',
     badgeClass: 'badge-gold',
     img: 'images/paula.png',
-    description: 'Dusty pink cotton with a muted, editorial tone. Paula is the go-to for families who prefer understated beauty — subtle, refined, and endlessly photogenic.',
+    description: 'Dusty pink cotton with a muted, editorial tone. Paula is the go-to for families who prefer understated beauty — subtle, refined, and endlessly photogenic. Also available in Pastel Yellow, Pastel Purple, Emerald Green, and Red Maroon.',
     breakdown: [['Mom & Daughter', '₱785'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Peach, Pastel Yellow, Pastel Purple, Emerald Green, Orange, Purple, Red Maroon',
-      'Mom Size: Medium - XXXL',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Medium - XXL'
+      'Mom Size: Medium – XXXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
     ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL', 'XXXL'], price: 785 },
@@ -221,13 +220,13 @@ const PRODUCTS = {
     badge: 'PINKY COORDS',
     badgeClass: 'badge-pink',
     img: 'images/pinky.png',
-    description: 'Bold purple linen coords with a modern, fashion-forward silhouette. Pinky Coords is for the family that dresses with intention — statement-making without trying too hard.',
+    description: 'Bold purple linen coords with a modern, fashion-forward silhouette. Pinky Coords is for the family that dresses with intention — statement-making without trying too hard. Also available in Green, Fuschia Pink, Yellow, and Black.',
     breakdown: [['Mom & Daughter', '₱725'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Green, Fuschia Pink, Yellow, Purple, Black',
-      'Mom Size: Small - Large',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Medium - XXL'
+      'Mom Size: Small – Large',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
     ],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],         price: 725 },
@@ -244,13 +243,13 @@ const PRODUCTS = {
     badge: 'AILAH',
     badgeClass: 'badge-brown',
     img: 'images/ailah.png',
-    description: 'Earthy green cotton that feels as natural as it looks. Ailah is grounded, warm, and perfect for families who love the outdoors, parks, and relaxed weekend togetherness.',
+    description: 'Earthy green cotton that feels as natural as it looks. Ailah is grounded, warm, and perfect for families who love the outdoors, parks, and relaxed weekend togetherness. Also available in Rust.',
     breakdown: [['Mom & Daughter', '₱785'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Green, Rust',
-      'Mom Size: Medium - XXL',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Medium - XXL'
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
     ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 785 },
@@ -267,13 +266,13 @@ const PRODUCTS = {
     badge: 'ALTHEA',
     badgeClass: 'badge-gold',
     img: 'images/althea.png',
-    description: 'Rich holiday red cotton that turns heads at every gathering. Althea is your go-to for Christmas celebrations, family reunions, and every cherished milestone in between.',
+    description: 'Rich holiday red cotton that turns heads at every gathering. Althea is your go-to for Christmas celebrations, family reunions, and every cherished milestone in between. Also available in Brown, Blue, and Pink.',
     breakdown: [['Mom & Daughter', '₱745'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Red, Brown, Blue, Pink',
-      'Mom Size: Medium - XXL',
-      'Daughter & Son Size: Small - Large',
-      'Dad size: Medium - XXL'
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
     ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 745 },
@@ -303,16 +302,18 @@ function openModal(productId) {
   document.getElementById('modal-colorway').textContent    = p.color.toUpperCase();
   document.getElementById('modal-title').textContent       = p.title;
   document.getElementById('modal-price').textContent       = '₱' + p.price.toLocaleString();
-  document.getElementById('modal-qty-display').textContent = modalQty;
+  document.getElementById('modal-qty-display').textContent = '1';
 
+  // Description
   const descEl = document.getElementById('modal-description');
   if (descEl) descEl.textContent = p.description || '';
 
+  // Image
   const imgEl = document.getElementById('modal-img');
   imgEl.src = p.img;
   imgEl.alt = p.title;
-  if (p.fallback) imgEl.onerror = () => { imgEl.src = p.fallback; };
 
+  // Details list
   const list = document.getElementById('modal-details-list');
   list.innerHTML = p.details.map(d => `<li>${d}</li>`).join('');
 
@@ -320,11 +321,16 @@ function openModal(productId) {
   const variantWrap = document.getElementById('modal-variant-wrap');
   if (variantWrap && p.variants) {
     variantWrap.innerHTML = Object.keys(p.variants).map(v =>
-      `<button class="variant-pill" onclick="selectVariant('${v.replace(/'/g, "\\'")}')">${v}</button>`
+      `<button class="variant-pill" data-variant="${v.replace(/"/g, '&quot;')}">${v}</button>`
     ).join('');
+
+    // Attach click listeners
+    variantWrap.querySelectorAll('.variant-pill').forEach(btn => {
+      btn.addEventListener('click', () => selectVariant(btn.dataset.variant));
+    });
   }
 
-  // Hide size group until variant is selected
+  // Hide size group until variant selected
   const sizeGroup = document.getElementById('modal-size-group');
   if (sizeGroup) sizeGroup.style.display = 'none';
 
@@ -343,12 +349,12 @@ function selectVariant(variantName) {
 
   hideModalError('modal-variant-error');
 
-  // Update variant pills
+  // Update variant pill styles
   document.querySelectorAll('#modal-variant-wrap .variant-pill').forEach(btn => {
-    btn.classList.toggle('selected', btn.textContent.trim() === variantName);
+    btn.classList.toggle('selected', btn.dataset.variant === variantName);
   });
 
-  // Update price display
+  // Update price
   const variantData = currentProduct.variants[variantName];
   const priceEl = document.getElementById('modal-price');
   if (priceEl && variantData) priceEl.textContent = '₱' + variantData.price.toLocaleString();
@@ -358,8 +364,13 @@ function selectVariant(variantName) {
   const sizeWrap  = document.getElementById('modal-size-wrap');
   if (sizeGroup && sizeWrap && variantData) {
     sizeWrap.innerHTML = variantData.sizes.map(s =>
-      `<button class="variant-pill" onclick="selectSize('${s}')">${s}</button>`
+      `<button class="variant-pill" data-size="${s}">${s}</button>`
     ).join('');
+
+    sizeWrap.querySelectorAll('.variant-pill').forEach(btn => {
+      btn.addEventListener('click', () => selectSize(btn.dataset.size));
+    });
+
     sizeGroup.style.display = 'block';
     hideModalError('modal-size-error');
   }
@@ -369,7 +380,7 @@ function selectSize(size) {
   selectedSize = size;
   hideModalError('modal-size-error');
   document.querySelectorAll('#modal-size-wrap .variant-pill').forEach(btn => {
-    btn.classList.toggle('selected', btn.textContent.trim() === size);
+    btn.classList.toggle('selected', btn.dataset.size === size);
   });
 }
 
@@ -393,15 +404,15 @@ function changeModalQty(delta) {
 function modalAddToCart() {
   if (!currentProduct) return;
 
-  // Validate variant
+  // Must select a variant
   if (currentProduct.variants && !selectedVariant) {
     const errEl = document.getElementById('modal-variant-error');
     if (errEl) errEl.classList.add('visible');
-    showToast('Select a variant', 'Choose Mom & Daughter, Dad, or Son first.');
+    showToast('Select a variant', 'Choose Mom & Daughter, Dad Shirt, or Son\'s Set first.');
     return;
   }
 
-  // Validate size
+  // Must select a size
   if (selectedVariant && !selectedSize) {
     const errEl = document.getElementById('modal-size-error');
     if (errEl) errEl.classList.add('visible');
@@ -410,14 +421,14 @@ function modalAddToCart() {
   }
 
   const variantData = currentProduct.variants ? currentProduct.variants[selectedVariant] : null;
-  const cartKey     = `${currentProduct.id}__${selectedVariant || 'default'}__${selectedSize || 'one-size'}`;
+  const cartKey = `${currentProduct.id}__${selectedVariant || 'default'}__${selectedSize || 'one-size'}`;
 
   const cartProduct = {
     ...currentProduct,
     cartKey,
     price:    variantData ? variantData.price : currentProduct.price,
     title:    selectedVariant
-                ? `${currentProduct.title} — ${selectedVariant} (${selectedSize})`
+                ? `${currentProduct.title} — ${selectedVariant} (Size ${selectedSize})`
                 : currentProduct.title,
     material: selectedSize
                 ? `${currentProduct.material} • Size ${selectedSize}`
@@ -430,15 +441,15 @@ function modalAddToCart() {
 
 // ─── CART RENDER
 function renderCart() {
-  const container    = document.getElementById('cart-items-container');
-  const emptyState   = document.getElementById('cart-empty-state');
+  const container      = document.getElementById('cart-items-container');
+  const emptyState     = document.getElementById('cart-empty-state');
   const summarySection = document.getElementById('order-summary-col');
   if (!container) return;
 
   if (cart.length === 0) {
     container.innerHTML = '';
-    if (emptyState)       emptyState.classList.remove('hidden');
-    if (summarySection)   summarySection.classList.add('hidden');
+    if (emptyState)     emptyState.classList.remove('hidden');
+    if (summarySection) summarySection.classList.add('hidden');
     return;
   }
 
@@ -448,8 +459,7 @@ function renderCart() {
   container.innerHTML = cart.map(item => `
     <div class="cart-item">
       <div class="cart-item-img">
-        <img src="${item.img}" alt="${item.title}"
-             onerror="this.src='${item.fallback || ''}'">
+        <img src="${item.img}" alt="${item.title}">
       </div>
       <div class="cart-item-info">
         <h3 class="cart-item-name">${item.title}</h3>
@@ -468,8 +478,8 @@ function renderCart() {
   `).join('');
 
   const subtotal = cart.reduce((s, i) => s + i.price * i.qty, 0);
-  const shipping  = subtotal >= 2500 ? 0 : 150;
-  const total     = subtotal + shipping;
+  const shipping = subtotal >= 2500 ? 0 : 150;
+  const total    = subtotal + shipping;
 
   const setEl = (id, val) => { const e = document.getElementById(id); if (e) e.textContent = val; };
   setEl('summary-subtotal', '₱' + subtotal.toLocaleString());
@@ -485,8 +495,8 @@ function applyPromo() {
   if (!input) return;
   const code = input.value.trim().toUpperCase();
   const valid = {
-    'MINIME10': { msg: '10% off applied!',              pct: 0.10 },
-    'FAMILY20': { msg: '20% off for family sets!',      pct: 0.20 },
+    'MINIME10': { msg: '10% discount applied!',        pct: 0.10 },
+    'FAMILY20': { msg: '20% off for family sets!',     pct: 0.20 },
     'HOLIDAY':  { msg: 'Holiday discount applied! (15%)', pct: 0.15 }
   };
   if (valid[code]) {
@@ -499,46 +509,73 @@ function applyPromo() {
 }
 
 // ─── TOAST
+// Toast must fire AFTER DOM is ready; we keep a queue just in case
+let toastTimer = null;
+
 function showToast(title, subtitle) {
   const toast = document.getElementById('toast');
   if (!toast) return;
-  document.getElementById('toast-title').textContent = title;
-  document.getElementById('toast-sub').textContent   = subtitle;
+
+  const titleEl = document.getElementById('toast-title');
+  const subEl   = document.getElementById('toast-sub');
+  if (titleEl) titleEl.textContent = title;
+  if (subEl)   subEl.textContent   = subtitle || '';
+
+  // Clear any existing timer so overlapping calls restart the animation
+  if (toastTimer) clearTimeout(toastTimer);
+  toast.classList.remove('show');
+
+  // Force reflow so removing/re-adding .show always triggers the CSS transition
+  void toast.offsetWidth;
+
   toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 3000);
+  toastTimer = setTimeout(() => {
+    toast.classList.remove('show');
+    toastTimer = null;
+  }, 3000);
 }
 
-// ─── CONTACT FORM
+// ─── CONTACT FORM VALIDATION
 function handleContact(e) {
   e.preventDefault();
   const nameEl    = document.getElementById('contact-name');
   const emailEl   = document.getElementById('contact-email');
   const messageEl = document.getElementById('contact-message');
 
-  // Clear old errors
   clearFieldError(nameEl,    'err-contact-name');
   clearFieldError(emailEl,   'err-contact-email');
   clearFieldError(messageEl, 'err-contact-message');
 
   let valid = true;
-  if (!nameEl.value.trim()) {
+
+  // Name: letters and spaces only, minimum 2 characters
+  const nameVal = nameEl.value.trim();
+  if (!nameVal || !/^[A-Za-zÀ-ÿ\s]{2,}$/.test(nameVal)) {
     showFieldError(nameEl, 'err-contact-name');
     valid = false;
   }
+
+  // Email: must contain @ and a dot after it
   const emailVal = emailEl.value.trim();
-  if (!emailVal || !emailVal.includes('@') || !emailVal.includes('.')) {
+  if (!emailVal || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
     showFieldError(emailEl, 'err-contact-email');
     valid = false;
   }
+
+  // Message: required
   if (!messageEl.value.trim()) {
     showFieldError(messageEl, 'err-contact-message');
     valid = false;
   }
-  if (!valid) return;
+
+  if (!valid) {
+    showToast('Please check the form', 'Some fields need your attention.');
+    return;
+  }
 
   const subject = document.getElementById('contact-subject')?.value.trim() || 'Enquiry from MiniMe website';
   const body    = encodeURIComponent(
-    `Hi MiniMe!\n\nName: ${nameEl.value.trim()}\nEmail: ${emailEl.value.trim()}\n\nMessage:\n${messageEl.value.trim()}\n\n— Sent via MiniMe Boutique website`
+    `Hi MiniMe!\n\nName: ${nameVal}\nEmail: ${emailVal}\n\nMessage:\n${messageEl.value.trim()}\n\n— Sent via MiniMe Boutique website`
   );
   window.location.href = `mailto:deargabclothing@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
   showToast('Opening your email app!', 'Your message is ready to send.');
@@ -550,36 +587,35 @@ function handleNewsletter(e) {
   e.preventDefault();
   const input = e.currentTarget.querySelector('input[type="email"]');
   const val   = input ? input.value.trim() : '';
-  if (!val) return;
+  if (!val || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+    showToast('Invalid email', 'Please enter a valid email address.');
+    return;
+  }
   showToast('Subscribed!', 'Thank you for joining the MiniMe family.');
   if (input) input.value = '';
 }
 
 // ─── FIELD ERROR HELPERS
 function showFieldError(inputEl, errorId) {
-  inputEl.classList.add('error');
+  if (inputEl) inputEl.classList.add('error');
   const errEl = document.getElementById(errorId);
   if (errEl) errEl.classList.add('visible');
 }
 
 function clearFieldError(inputEl, errorId) {
-  inputEl.classList.remove('error');
+  if (inputEl) inputEl.classList.remove('error');
   const errEl = document.getElementById(errorId);
   if (errEl) errEl.classList.remove('visible');
 }
 
-// Clear error on user input
 function attachInputClearers() {
   document.querySelectorAll('.form-input, .form-textarea').forEach(el => {
-    el.addEventListener('input', () => {
-      el.classList.remove('error');
-      const errEl = el.parentElement.querySelector('.field-error');
-      if (errEl) errEl.classList.remove('visible');
-    });
-    el.addEventListener('change', () => {
-      el.classList.remove('error');
-      const errEl = el.parentElement.querySelector('.field-error');
-      if (errEl) errEl.classList.remove('visible');
+    ['input', 'change'].forEach(evt => {
+      el.addEventListener(evt, () => {
+        el.classList.remove('error');
+        const errEl = el.parentElement.querySelector('.field-error');
+        if (errEl) errEl.classList.remove('visible');
+      });
     });
   });
 }
@@ -604,62 +640,87 @@ function closeCheckoutModal() {
 }
 
 function checkoutStep(step, skipValidation) {
-  // Validate step 1 before going to step 2
+  // ── Validate Step 1 → 2
   if (step === 2 && !skipValidation) {
     const fname = document.getElementById('co-fname');
     const lname = document.getElementById('co-lname');
     const email = document.getElementById('co-email');
     const phone = document.getElementById('co-phone');
 
-    clearFieldError(fname, 'err-fname');
-    clearFieldError(lname, 'err-lname');
-    clearFieldError(email, 'err-email');
-    clearFieldError(phone, 'err-phone');
+    [['co-fname','err-fname'], ['co-lname','err-lname'],
+     ['co-email','err-email'], ['co-phone','err-phone']].forEach(([id, eid]) => {
+      clearFieldError(document.getElementById(id), eid);
+    });
 
     let valid = true;
-    if (!fname.value.trim()) { showFieldError(fname, 'err-fname'); valid = false; }
-    if (!lname.value.trim()) { showFieldError(lname, 'err-lname'); valid = false; }
-    if (!phone.value.trim()) { showFieldError(phone, 'err-phone'); valid = false; }
 
-    const emailVal = email.value.trim();
-    if (!emailVal || !emailVal.includes('@') || !emailVal.includes('.')) {
+    // Names: letters only
+    if (!fname.value.trim() || !/^[A-Za-zÀ-ÿ\s]{1,}$/.test(fname.value.trim())) {
+      showFieldError(fname, 'err-fname');
+      valid = false;
+    }
+    if (!lname.value.trim() || !/^[A-Za-zÀ-ÿ\s]{1,}$/.test(lname.value.trim())) {
+      showFieldError(lname, 'err-lname');
+      valid = false;
+    }
+
+    // Email
+    if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
       showFieldError(email, 'err-email');
       valid = false;
     }
-    if (!valid) return;
+
+    // Phone: Philippine mobile (09xxxxxxxxx or +639xxxxxxxxx) or at least 10 digits
+    const phoneVal = phone.value.trim().replace(/[\s\-()]/g, '');
+    if (!phoneVal || !/^(\+?63|0)9\d{9}$/.test(phoneVal)) {
+      showFieldError(phone, 'err-phone');
+      // Update error message text to be more helpful
+      const phoneErrEl = document.getElementById('err-phone');
+      if (phoneErrEl) phoneErrEl.textContent = 'Enter a valid PH number (e.g. 09XX XXX XXXX).';
+      valid = false;
+    }
+
+    if (!valid) {
+      showToast('Please check your details', 'Some required fields are incomplete or invalid.');
+      return;
+    }
   }
 
-  // Validate step 2 before going to step 3
+  // ── Validate Step 2 → 3
   if (step === 3 && !skipValidation) {
-    const region  = document.getElementById('co-region');
+    const region   = document.getElementById('co-region');
     const province = document.getElementById('co-province');
-    const city    = document.getElementById('co-city');
-    const address = document.getElementById('co-address');
+    const city     = document.getElementById('co-city');
+    const address  = document.getElementById('co-address');
 
-    clearFieldError(region,   'err-region');
-    clearFieldError(province, 'err-province');
-    clearFieldError(city,     'err-city');
-    clearFieldError(address,  'err-address');
+    [['co-region','err-region'], ['co-province','err-province'],
+     ['co-city','err-city'], ['co-address','err-address']].forEach(([id, eid]) => {
+      clearFieldError(document.getElementById(id), eid);
+    });
 
     let valid = true;
-    if (!region.value)    { showFieldError(region,   'err-region');   valid = false; }
-    if (!province.value)  { showFieldError(province, 'err-province'); valid = false; }
-    if (!city.value)      { showFieldError(city,     'err-city');     valid = false; }
-    if (!address.value.trim()) { showFieldError(address, 'err-address'); valid = false; }
-    if (!valid) return;
+    if (!region.value)          { showFieldError(region,   'err-region');   valid = false; }
+    if (!province.value)        { showFieldError(province, 'err-province'); valid = false; }
+    if (!city.value)            { showFieldError(city,     'err-city');     valid = false; }
+    if (!address.value.trim())  { showFieldError(address,  'err-address');  valid = false; }
+
+    if (!valid) {
+      showToast('Please complete your address', 'All address fields are required.');
+      return;
+    }
   }
 
-  // Hide all panels
+  // ── Show the right panel
   document.querySelectorAll('.checkout-step-panel').forEach(p => p.classList.add('hidden'));
   const panel = document.getElementById('checkout-step-' + step);
   if (panel) panel.classList.remove('hidden');
 
-  // Update step indicators
-  document.querySelectorAll('.checkout-step').forEach(el => {
+  // ── Update step indicators
+  document.querySelectorAll('.checkout-step[data-step]').forEach(el => {
     const s = parseInt(el.dataset.step);
     el.classList.remove('active', 'done');
-    if (s === step) el.classList.add('active');
-    else if (s < step) el.classList.add('done');
+    if (s === step)      el.classList.add('active');
+    else if (s < step)   el.classList.add('done');
   });
 
   if (step === 3) buildOrderReview();
@@ -729,14 +790,12 @@ function confirmOrder() {
   const shipping   = discounted >= 2500 ? 0 : 150;
   const total      = discounted + shipping;
 
-  // Show success info
   const setEl = (id, val) => { const e = document.getElementById(id); if (e) e.textContent = val; };
   setEl('res-order-num', orderNum);
   setEl('res-items',     cart.map(i => `${i.title} ×${i.qty}`).join(', '));
   setEl('res-total',     '₱' + total.toLocaleString());
   setEl('res-payment',   payment.toUpperCase());
 
-  // Build email for store
   const itemList = cart.map(i => `  - ${i.title} × ${i.qty} = ₱${(i.price * i.qty).toLocaleString()}`).join('\n');
   const emailBody = encodeURIComponent(
 `🎉 NEW ORDER #${orderNum}
@@ -779,22 +838,32 @@ Sent via MiniMe Boutique website.`
 // ─── LOCATION DROPDOWNS
 const locationData = {
   'NCR': {
-    provinces: { 'Metro Manila': { cities: { 'Manila': '1000', 'Quezon City': '1100', 'Makati': '1200', 'Taguig': '1630', 'Pasig': '1600', 'Mandaluyong': '1550', 'Marikina': '1800', 'Parañaque': '1700', 'Las Piñas': '1740', 'Muntinlupa': '1770', 'Caloocan': '1400', 'Malabon': '1470', 'Navotas': '1485', 'Valenzuela': '1440', 'Pasay': '1300', 'Pateros': '1620' } } }
+    provinces: {
+      'Metro Manila': {
+        cities: {
+          'Manila': '1000', 'Quezon City': '1100', 'Makati': '1200',
+          'Taguig': '1630', 'Pasig': '1600', 'Mandaluyong': '1550',
+          'Marikina': '1800', 'Parañaque': '1700', 'Las Piñas': '1740',
+          'Muntinlupa': '1770', 'Caloocan': '1400', 'Malabon': '1470',
+          'Navotas': '1485', 'Valenzuela': '1440', 'Pasay': '1300', 'Pateros': '1620'
+        }
+      }
+    }
   },
   'Region IV-A (CALABARZON)': {
     provinces: {
       'Cavite':  { cities: { 'Bacoor': '4102', 'Dasmariñas': '4114', 'Imus': '4103', 'Kawit': '4104', 'Tagaytay': '4120', 'Trece Martires': '4109', 'General Trias': '4107', 'Silang': '4118' } },
       'Laguna':  { cities: { 'Santa Rosa': '4026', 'Biñan': '4024', 'Cabuyao': '4025', 'San Pedro': '4023', 'Calamba': '4027', 'Los Baños': '4030', 'Pagsanjan': '4008', 'San Pablo': '4000' } },
-      'Batangas': { cities: { 'Batangas City': '4200', 'Lipa': '4217', 'Tanauan': '4232', 'Santo Tomas': '4234', 'Nasugbu': '4231', 'Rosario': '4225' } },
+      'Batangas':{ cities: { 'Batangas City': '4200', 'Lipa': '4217', 'Tanauan': '4232', 'Santo Tomas': '4234', 'Nasugbu': '4231', 'Rosario': '4225' } },
       'Rizal':   { cities: { 'Antipolo': '1870', 'Cainta': '1900', 'Taytay': '1920', 'Angono': '1930', 'Binangonan': '1940', 'San Mateo': '1850', 'Pililla': '1910', 'Cardona': '1950', 'Morong': '1960', 'Teresa': '1880' } },
       'Quezon':  { cities: { 'Lucena': '4301', 'Tayabas': '4327', 'Sariaya': '4322', 'Candelaria': '4323', 'Atimonan': '4331' } }
     }
   },
   'Region III (Central Luzon)': {
     provinces: {
-      'Bulacan':   { cities: { 'Malolos': '3000', 'Meycauayan': '3020', 'San Jose del Monte': '3023', 'Marilao': '3019', 'Bocaue': '3018', 'Balagtas': '3016' } },
-      'Pampanga':  { cities: { 'Angeles': '2009', 'San Fernando': '2000', 'Mabalacat': '2010', 'Porac': '2008', 'Guagua': '2003' } },
-      'Nueva Ecija': { cities: { 'Cabanatuan': '3100', 'Palayan': '3132', 'San Jose': '3121', 'Gapan': '3105', 'Munoz': '3119' } }
+      'Bulacan':    { cities: { 'Malolos': '3000', 'Meycauayan': '3020', 'San Jose del Monte': '3023', 'Marilao': '3019', 'Bocaue': '3018', 'Balagtas': '3016' } },
+      'Pampanga':   { cities: { 'Angeles': '2009', 'San Fernando': '2000', 'Mabalacat': '2010', 'Porac': '2008', 'Guagua': '2003' } },
+      'Nueva Ecija':{ cities: { 'Cabanatuan': '3100', 'Palayan': '3132', 'San Jose': '3121', 'Gapan': '3105', 'Munoz': '3119' } }
     }
   },
   'Region I (Ilocos Region)': {
@@ -813,8 +882,8 @@ function updateProvinces() {
   const citySel  = document.getElementById('co-city');
   const zipInput = document.getElementById('co-zip');
 
-  provSel.innerHTML  = '<option value="" disabled selected>Select Province</option>';
-  citySel.innerHTML  = '<option value="" disabled selected>Select City</option>';
+  provSel.innerHTML = '<option value="" disabled selected>Select Province</option>';
+  citySel.innerHTML = '<option value="" disabled selected>Select City</option>';
   if (zipInput) zipInput.value = '';
 
   if (!region || !locationData[region]) return;
@@ -850,8 +919,7 @@ function updateZip() {
   const city     = document.getElementById('co-city').value;
   const zipInput = document.getElementById('co-zip');
   if (!zipInput) return;
-  const zip = locationData[region]?.provinces[province]?.cities[city];
-  zipInput.value = zip || '';
+  zipInput.value = locationData[region]?.provinces[province]?.cities[city] || '';
 }
 
 // ─── PAGE NAVIGATION (SPA)
@@ -861,9 +929,7 @@ function showPage(pageName, scrollTo) {
   if (target) target.classList.remove('hidden');
 
   document.querySelectorAll('.nav-links a').forEach(a => {
-    a.classList.toggle('active',
-      a.dataset.page === pageName && !a.dataset.scrollTo
-    );
+    a.classList.toggle('active', a.dataset.page === pageName && !a.dataset.scrollTo);
   });
 
   if (scrollTo) {
@@ -883,7 +949,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCartBadges();
   attachInputClearers();
 
-  // Product card clicks → open modal
+  // Product card clicks → open modal (whole card area)
   document.querySelectorAll('[data-product]').forEach(card => {
     card.addEventListener('click', () => openModal(card.dataset.product));
     card.addEventListener('keydown', e => {
@@ -894,22 +960,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // "Add to Cart" quick-add buttons on the cards should open the modal instead,
+  // so the user picks a variant & size first
+  document.querySelectorAll('.product-add-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const card = btn.closest('[data-product]');
+      if (card) openModal(card.dataset.product);
+    });
+  });
+
   // Nav page links
   document.querySelectorAll('[data-page]').forEach(el => {
     el.addEventListener('click', e => {
       e.preventDefault();
-      const page      = el.dataset.page;
-      const scrollTo  = el.dataset.scrollTo || null;
+      const page     = el.dataset.page;
+      const scrollTo = el.dataset.scrollTo || null;
       const scrollTop = el.dataset.scrollTop;
-      if (scrollTop) {
-        showPage(page);
-      } else {
-        showPage(page, scrollTo);
-      }
+      showPage(page, scrollTop ? null : scrollTo);
     });
   });
 
-  // Close product modal on backdrop click or Escape
+  // Close product modal on backdrop click
   const modalOverlay = document.getElementById('modal-overlay');
   if (modalOverlay) {
     modalOverlay.addEventListener('click', e => {
