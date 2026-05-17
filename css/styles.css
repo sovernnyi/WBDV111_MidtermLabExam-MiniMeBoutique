@@ -1,10 +1,4 @@
-/* ============================================================
-   MiniMe Boutique — styles.css  (patched)
-   Key fixes vs original:
-     1. Toast z-index raised to 9999 + stacking context isolated
-     2. .field-error visibility improved (color, margin)
-     3. No other layout changes
-   ============================================================ */
+/* MiniMe Boutique —  */
 
 /* --- CSS VARIABLES --- */
 :root {
@@ -818,11 +812,7 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
 }
 .modal-add-btn svg { width: 16px; height: 16px; }
 
-/* ─── FIELD ERROR ─────────────────────────────────────────────
-   FIX: was display:none / display:block which breaks animation.
-   Now uses opacity + height so it slides in smoothly.
-   The .visible class is toggled by JS.
-   ──────────────────────────────────────────────────────────── */
+/* ─── FIELD ERROR */
 .field-error {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
@@ -1305,10 +1295,7 @@ select.error {
 }
 .form-submit-btn svg { width: 16px; height: 16px; }
 
-/* ─── TOAST ────────────────────────────────────────────────────
-   FIX: z-index raised above checkout overlay (z-index:300).
-   Also moved outside stacking context created by modals in HTML.
-   ──────────────────────────────────────────────────────────── */
+/* ─── TOAST */
 .toast {
   position: fixed;
   bottom: 32px; right: 32px;
