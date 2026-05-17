@@ -839,24 +839,45 @@ Sent via MiniMe Boutique website.`
 const locationData = {
   'NCR': {
     provinces: {
-      'Metro Manila': {
-        cities: {
-          'Manila': '1000', 'Quezon City': '1100', 'Makati': '1200',
-          'Taguig': '1630', 'Pasig': '1600', 'Mandaluyong': '1550',
-          'Marikina': '1800', 'Parañaque': '1700', 'Las Piñas': '1740',
-          'Muntinlupa': '1770', 'Caloocan': '1400', 'Malabon': '1470',
-          'Navotas': '1485', 'Valenzuela': '1440', 'Pasay': '1300', 'Pateros': '1620'
-        }
-      }
+      'Metro Manila': { cities: { 'Caloocan': '1400', 'Las Piñas': '1740', 'Makati': '1200', 'Malabon': '1470', 'Mandaluyong': '1550', 'Manila': '1000', 'Marikina': '1800', 'Muntinlupa': '1770', 'Navotas': '1485', 'Parañaque': '1700', 'Pasay': '1300', 'Pasig': '1600', 'Pateros': '1620', 'Quezon City': '1100', 'San Juan': '1500', 'Taguig': '1630', 'Valenzuela': '1440' } }
+    }
+  },
+  'Cordillera Administrative Region (CAR)': {
+    provinces: {
+      'Abra':              { cities: { 'Bangued': '2800', 'Dolores': '2801', 'Bucay': '2805', 'Pidigan': '2806' } },
+      'Apayao':            { cities: { 'Kabugao': '3809', 'Luna': '3813', 'Conner': '3807', 'Flora': '3810' } },
+      'Benguet':           { cities: { 'Baguio': '2600', 'La Trinidad': '2601', 'Itogon': '2604', 'Tuba': '2603' } },
+      'Ifugao':            { cities: { 'Lagawe': '3600', 'Banaue': '3601', 'Kiangan': '3604', 'Lamut': '3605' } },
+      'Kalinga':           { cities: { 'Tabuk': '3800', 'Lubuagan': '3802', 'Tinglayan': '3804', 'Pinukpuk': '3806' } },
+      'Mountain Province': { cities: { 'Bontoc': '2616', 'Sagada': '2619', 'Bauko': '2621', 'Besao': '2618' } }
+    }
+  },
+  'Region V (Bicol Region)': {
+    provinces: {
+      'Albay':           { cities: { 'Legazpi': '4500', 'Ligao': '4504', 'Tabaco': '4511', 'Daraga': '4501' } },
+      'Camarines Norte': { cities: { 'Daet': '4600', 'Labo': '4604', 'Paracale': '4605', 'Vinzons': '4603' } },
+      'Camarines Sur':   { cities: { 'Naga': '4400', 'Iriga': '4431', 'Pili': '4418', 'Caramoan': '4429' } },
+      'Catanduanes':     { cities: { 'Virac': '4800', 'Bato': '4801', 'San Andres': '4810', 'Pandan': '4809' } },
+      'Masbate':         { cities: { 'Masbate City': '5400', 'Aroroy': '5419', 'Cataingan': '5405', 'Placer': '5408' } },
+      'Sorsogon':        { cities: { 'Sorsogon City': '4700', 'Bulan': '4706', 'Donsol': '4715', 'Gubat': '4710' } }
+    }
+  },
+  'MIMAROPA Region': {
+    provinces: {
+      'Occidental Mindoro': { cities: { 'Mamburao': '5106', 'San Jose': '5100', 'Sablayan': '5104', 'Lubang': '5109' } },
+      'Oriental Mindoro':   { cities: { 'Calapan': '5200', 'Puerto Galera': '5203', 'Pinamalayan': '5208', 'Roxas': '5212' } },
+      'Marinduque':         { cities: { 'Boac': '4900', 'Gasan': '4905', 'Santa Cruz': '4902', 'Mogpog': '4901' } },
+      'Romblon':            { cities: { 'Romblon': '5500', 'Odiongan': '5505', 'Looc': '5507', 'San Agustin': '5501' } },
+      'Palawan':            { cities: { 'Puerto Princesa': '5300', 'Coron': '5316', 'El Nido': '5313', 'Roxas': '5308' } }
     }
   },
   'Region IV-A (CALABARZON)': {
     provinces: {
-      'Cavite':  { cities: { 'Bacoor': '4102', 'Dasmariñas': '4114', 'Imus': '4103', 'Kawit': '4104', 'Tagaytay': '4120', 'Trece Martires': '4109', 'General Trias': '4107', 'Silang': '4118' } },
-      'Laguna':  { cities: { 'Santa Rosa': '4026', 'Biñan': '4024', 'Cabuyao': '4025', 'San Pedro': '4023', 'Calamba': '4027', 'Los Baños': '4030', 'Pagsanjan': '4008', 'San Pablo': '4000' } },
-      'Batangas':{ cities: { 'Batangas City': '4200', 'Lipa': '4217', 'Tanauan': '4232', 'Santo Tomas': '4234', 'Nasugbu': '4231', 'Rosario': '4225' } },
-      'Rizal':   { cities: { 'Antipolo': '1870', 'Cainta': '1900', 'Taytay': '1920', 'Angono': '1930', 'Binangonan': '1940', 'San Mateo': '1850', 'Pililla': '1910', 'Cardona': '1950', 'Morong': '1960', 'Teresa': '1880' } },
-      'Quezon':  { cities: { 'Lucena': '4301', 'Tayabas': '4327', 'Sariaya': '4322', 'Candelaria': '4323', 'Atimonan': '4331' } }
+      'Cavite':   { cities: { 'Bacoor': '4102', 'Dasmariñas': '4114', 'Imus': '4103', 'Kawit': '4104', 'Tagaytay': '4120', 'Trece Martires': '4109', 'General Trias': '4107', 'Silang': '4118', 'Cavite City': '4100', 'Carmona': '4116' } },
+      'Laguna':   { cities: { 'Santa Rosa': '4026', 'Biñan': '4024', 'Cabuyao': '4025', 'San Pedro': '4023', 'Calamba': '4027', 'Los Baños': '4030', 'Pagsanjan': '4008', 'San Pablo': '4000', 'Nagcarlan': '4002', 'Siniloan': '4012' } },
+      'Batangas': { cities: { 'Batangas City': '4200', 'Lipa': '4217', 'Tanauan': '4232', 'Santo Tomas': '4234', 'Nasugbu': '4231', 'Rosario': '4225', 'Bauans': '4201', 'Lemery': '4209', 'Calatagan': '4215' } },
+      'Rizal':    { cities: { 'Antipolo': '1870', 'Cainta': '1900', 'Taytay': '1920', 'Angono': '1930', 'Binangonan': '1940', 'San Mateo': '1850', 'Pililla': '1910', 'Cardona': '1950', 'Morong': '1960', 'Teresa': '1880', 'Tanay': '1980', 'Rodriguez': '1860', 'Baras': '1990', 'Jala-jala': '1970' } },
+      'Quezon':   { cities: { 'Lucena': '4301', 'Tayabas': '4327', 'Sariaya': '4322', 'Candelaria': '4323', 'Atimonan': '4331', 'Lucban': '4328', 'Mauban': '4330', 'Gumaca': '4307', 'Infanta': '4336', 'Real': '4335' } }
     }
   },
   'Region III (Central Luzon)': {
@@ -864,6 +885,15 @@ const locationData = {
       'Bulacan':    { cities: { 'Malolos': '3000', 'Meycauayan': '3020', 'San Jose del Monte': '3023', 'Marilao': '3019', 'Bocaue': '3018', 'Balagtas': '3016' } },
       'Pampanga':   { cities: { 'Angeles': '2009', 'San Fernando': '2000', 'Mabalacat': '2010', 'Porac': '2008', 'Guagua': '2003' } },
       'Nueva Ecija':{ cities: { 'Cabanatuan': '3100', 'Palayan': '3132', 'San Jose': '3121', 'Gapan': '3105', 'Munoz': '3119' } }
+    }
+  },
+  'Region II (Cagayan Valley)': {
+    provinces: {
+      'Batanes':       { cities: { 'Basco': '3900', 'Itbayat': '3905', 'Ivana': '3902' } },
+      'Cagayan':       { cities: { 'Tuguegarao City': '3500', 'Aparri': '3515', 'Enrile': '3501', 'Peñablanca': '3502' } },
+      'Isabela':       { cities: { 'Ilagan': '3300', 'Santiago': '3311', 'Cauayan': '3305', 'Alicia': '3306', 'Roxas': '3320' } },
+      'Nueva Vizcaya': { cities: { 'Bayombong': '3700', 'Solano': '3709', 'Bambang': '3702', 'Aritao': '3704' } },
+      'Quirino':       { cities: { 'Cabarroguis': '3400', 'Maddela': '3404', 'Diffun': '3401' } }
     }
   },
   'Region I (Ilocos Region)': {
