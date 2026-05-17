@@ -687,8 +687,10 @@
           <div class="form-group">
             <label for="contact-name" class="form-label">Full Name</label>
             <input type="text" id="contact-name" name="name" class="form-input"
-                   placeholder="Your name" required aria-required="true" />
-            <div class="field-error" id="err-contact-name">Please enter your full name.</div>
+                   placeholder="Your name" required aria-required="true" 
+                   pattern="[A-Za-z\s]+" 
+                   title="Please use letters and spaces only." />
+           <div class="field-error" id="err-contact-name">Please enter your full name using only letters.</div>
           </div>
           <div class="form-group">
             <label for="contact-email" class="form-label">Email Address</label>
