@@ -812,11 +812,7 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
 }
 .modal-add-btn svg { width: 16px; height: 16px; }
 
-/* ─── FIELD ERROR ─────────────────────────────────────────────
-   FIX: was display:none / display:block which breaks animation.
-   Now uses opacity + height so it slides in smoothly.
-   The .visible class is toggled by JS.
-   ──────────────────────────────────────────────────────────── */
+/* ─── FIELD ERROR */
 .field-error {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
