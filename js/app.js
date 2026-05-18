@@ -61,6 +61,12 @@ const PRODUCTS = {
     img: 'images/sandra.png',
     description: 'The Sandra set features a delicate floral print — perfect for family portraits and special occasions. Light and breathable, it drapes beautifully on every body type.',
     colors: ['Peach Pink', 'Purple', 'Denim Blue', 'Yellow'],
+    details: [
+      'Also available in: Peach Pink, Purple, Denim Blue, Yellow',
+      'Mom Size: Small – XL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Large – XXL'
+    ],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L', 'XL'], price: 825 },
       'Dad Shirt':          { sizes: ['L', 'XL', 'XXL'],    price: 345 },
@@ -71,13 +77,19 @@ const PRODUCTS = {
     id: 'krizzel',
     title: 'Krizzel Family Set',
     price: 1160,
-    color: 'White',
+    color: 'White Linen',
     material: 'Cotton Linen • White',
     badge: 'KRIZZEL',
     badgeClass: 'badge-pink',
     img: 'images/krizzel.png',
     description: 'Clean, crisp white cotton linen for the whole family. The Krizzel twin set is our most versatile collection — effortlessly elegant for beach trips, family events, or Sunday outings.',
     colors: ['White', 'Indigo', 'Purple', 'Red', 'Forest Green'],
+    details: [
+      'Also available in: Indigo, Purple, Red, Forest Green',
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
+    ],
     variants: {
       'Twin Set (Mom & Daughter)': { sizes: ['M', 'L', 'XL', 'XXL'], price: 815 },
       'Dad Shirt':                 { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -95,6 +107,12 @@ const PRODUCTS = {
     img: 'images/mia.png',
     description: 'Sophisticated black with hand-inspired flower embroidery. The Mia set makes a bold statement — timeless, elegant, and completely unforgettable in photos.',
     colors: ['Black', 'Nude', 'White', 'Red'],
+    details: [
+      'Also available in: Nude, White, Black, Red',
+      'Mom Size: Small – Large',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
+    ],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],         price: 795 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -112,6 +130,12 @@ const PRODUCTS = {
     img: 'images/eula.png',
     description: 'Soft blush pink linen that catches the light beautifully. The Eula set is airy, romantic, and perfect for golden hour family shoots or intimate celebrations.',
     colors: ['Blush Pink', 'Yellow', 'Red', 'White', 'Blue', 'Purple'],
+    details: [
+      'Also available in: Yellow, Red, White, Pink, Blue, Purple',
+      'Mom Size: Small – Large',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
+    ],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],         price: 815 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -122,13 +146,19 @@ const PRODUCTS = {
     id: 'olivia',
     title: 'Olivia Family Set',
     price: 1160,
-    color: 'Peach',
+    color: 'Peach Floral',
     material: 'Cotton Floral • Peach',
     badge: 'OLIVIA',
     badgeClass: 'badge-pink',
     img: 'images/olivia.png',
     description: 'Fresh cotton floral with a cottagecore spirit. Olivia is made for families who love nature, warmth, and outfits that feel as good as they look.',
     colors: ['Peach', 'Red', 'Blue', 'Purple', 'Pink', 'Green', 'Orange'],
+    details: [
+      'Also available in: Red, Blue, Peach, Purple, Pink, Green, Orange',
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
+    ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 815 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -146,6 +176,12 @@ const PRODUCTS = {
     img: 'images/ellery.png',
     description: 'Pastel linen that radiates sunshine. Ellery is our widest color selection — from Fuschia Pink to Royal Blue — making it easy to find the perfect shade for your family aesthetic.',
     colors: ['Pastel Yellow', 'Red', 'Peach', 'Green', 'White', 'Pink', 'Pastel Blue', 'Royal Blue', 'Purple', 'Cream', 'Black', 'Fuschia Pink'],
+    details: [
+      'Also available in: Red, Peach, Green, Yellow, White, Pink, Pastel Blue, Royal Blue, Purple, Cream, Black, Fuschia Pink',
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
+    ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 835 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -161,8 +197,14 @@ const PRODUCTS = {
     badge: 'PAULA',
     badgeClass: 'badge-gold',
     img: 'images/paula.png',
-    description: 'Cotton with a muted, editorial tone. Paula is the go-to for families who prefer understated beauty — subtle, refined, and endlessly photogenic.',
+    description: 'Cotton with a muted, editorial tone. Paula is the go-to for families who prefer understated beauty — subtle, refined, and endlessly photogenic. Also available in Pastel Yellow, Pastel Purple, Emerald Green, and Red Maroon.',
     colors: ['Dusty Pink', 'Peach', 'Pastel Yellow', 'Pastel Purple', 'Emerald Green', 'Orange', 'Purple', 'Red Maroon'],
+    details: [
+      'Also available in: Peach, Pastel Yellow, Pastel Purple, Emerald Green, Orange, Purple, Red Maroon',
+      'Mom Size: Medium – XXXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
+    ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL', 'XXXL'], price: 785 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'],         price: 345 },
@@ -180,6 +222,12 @@ const PRODUCTS = {
     img: 'images/pinky.png',
     description: 'Bold linen coords with a modern, fashion-forward silhouette. Pinky Coords is for the family that dresses with intention — statement-making without trying too hard.',
     colors: ['Purple', 'Green', 'Fuschia Pink', 'Yellow', 'Black'],
+    details: [
+      'Also available in: Green, Fuschia Pink, Yellow, Purple, Black',
+      'Mom Size: Small – Large',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
+    ],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],         price: 725 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -197,6 +245,12 @@ const PRODUCTS = {
     img: 'images/ailah.png',
     description: 'Earthy color cotton that feels as natural as it looks. Ailah is grounded, warm, and perfect for families who love the outdoors, parks, and relaxed weekend togetherness.',
     colors: ['Green', 'Rust'],
+    details: [
+      'Also available in: Green, Rust',
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
+    ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 785 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -214,6 +268,12 @@ const PRODUCTS = {
     img: 'images/althea.png',
     description: 'Rich color cotton that turns heads at every gathering. Althea is your go-to for Christmas celebrations, family reunions, and every cherished milestone in between.',
     colors: ['Holiday Red', 'Brown', 'Blue', 'Pink'],
+    details: [
+      'Also available in: Red, Brown, Blue, Pink',
+      'Mom Size: Medium – XXL',
+      'Daughter & Son Size: Small – Large',
+      'Dad Size: Medium – XXL'
+    ],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 745 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -254,6 +314,10 @@ function openModal(productId) {
   const imgEl = document.getElementById('modal-img');
   imgEl.src = p.img;
   imgEl.alt = p.title;
+
+  // Details list
+  const list = document.getElementById('modal-details-list');
+  if (list) list.innerHTML = p.details.map(d => `<li>${d}</li>`).join('');
 
   // Build color pills
   const colorWrap = document.getElementById('modal-color-wrap');
@@ -385,9 +449,9 @@ function modalAddToCart() {
   const variantData = currentProduct.variants ? currentProduct.variants[selectedVariant] : null;
   const cartKey = `${currentProduct.id}__${selectedColor || 'default'}__${selectedVariant || 'default'}__${selectedSize || 'one-size'}`;
 
-  const colorLabel  = selectedColor  ? ` • ${selectedColor}` : '';
+  const colorLabel   = selectedColor   ? ` • ${selectedColor}`   : '';
   const variantLabel = selectedVariant ? ` — ${selectedVariant}` : '';
-  const sizeLabel   = selectedSize   ? ` (Size ${selectedSize})` : '';
+  const sizeLabel    = selectedSize    ? ` (Size ${selectedSize})` : '';
 
   const cartProduct = {
     ...currentProduct,
@@ -1022,8 +1086,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-page]').forEach(el => {
     el.addEventListener('click', e => {
       e.preventDefault();
-      const page     = el.dataset.page;
-      const scrollTo = el.dataset.scrollTo || null;
+      const page      = el.dataset.page;
+      const scrollTo  = el.dataset.scrollTo || null;
       const scrollTop = el.dataset.scrollTop;
       showPage(page, scrollTop ? null : scrollTo);
     });
@@ -1050,7 +1114,7 @@ document.addEventListener('DOMContentLoaded', () => {
   showPage('home');
 });
 
-// ─── MOBILE MENU 
+// ─── MOBILE MENU
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const navLinks  = document.querySelector('.nav-links');
@@ -1058,7 +1122,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('mobile-open');
-      // Toggle active class on hamburger for CSS animation
       hamburger.classList.toggle('active', isOpen);
       hamburger.setAttribute('aria-expanded', isOpen.toString());
     });
