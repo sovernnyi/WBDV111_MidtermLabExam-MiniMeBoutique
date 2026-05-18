@@ -60,12 +60,7 @@ const PRODUCTS = {
     badgeClass: 'badge-gold',
     img: 'images/sandra.png',
     description: 'The Sandra set features a delicate floral print — perfect for family portraits and special occasions. Light and breathable, it drapes beautifully on every body type.',
-    details: [
-      'Also available in: Peach Pink, Purple, Denim Blue, Yellow',
-      'Mom Size: Small – XL',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Large – XXL'
-    ],
+    colors: ['Peach Pink', 'Purple', 'Denim Blue', 'Yellow'],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L', 'XL'], price: 825 },
       'Dad Shirt':          { sizes: ['L', 'XL', 'XXL'],    price: 345 },
@@ -76,18 +71,13 @@ const PRODUCTS = {
     id: 'krizzel',
     title: 'Krizzel Family Set',
     price: 1160,
-    color: 'White Linen',
+    color: 'White',
     material: 'Cotton Linen • White',
     badge: 'KRIZZEL',
     badgeClass: 'badge-pink',
     img: 'images/krizzel.png',
     description: 'Clean, crisp white cotton linen for the whole family. The Krizzel twin set is our most versatile collection — effortlessly elegant for beach trips, family events, or Sunday outings.',
-    details: [
-      'Also available in: Indigo, Purple, Red, Forest Green',
-      'Mom Size: Medium – XXL',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Medium – XXL'
-    ],
+    colors: ['White', 'Indigo', 'Purple', 'Red', 'Forest Green'],
     variants: {
       'Twin Set (Mom & Daughter)': { sizes: ['M', 'L', 'XL', 'XXL'], price: 815 },
       'Dad Shirt':                 { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -104,12 +94,7 @@ const PRODUCTS = {
     badgeClass: 'badge-brown',
     img: 'images/mia.png',
     description: 'Sophisticated black with hand-inspired flower embroidery. The Mia set makes a bold statement — timeless, elegant, and completely unforgettable in photos.',
-    details: [
-      'Also available in: Nude, White, Black, Red',
-      'Mom Size: Small – Large',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Medium – XXL'
-    ],
+    colors: ['Black', 'Nude', 'White', 'Red'],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],         price: 795 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -126,12 +111,7 @@ const PRODUCTS = {
     badgeClass: 'badge-gold',
     img: 'images/eula.png',
     description: 'Soft blush pink linen that catches the light beautifully. The Eula set is airy, romantic, and perfect for golden hour family shoots or intimate celebrations.',
-    details: [
-      'Also available in: Yellow, Red, White, Pink, Blue, Purple',
-      'Mom Size: Small – Large',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Medium – XXL'
-    ],
+    colors: ['Blush Pink', 'Yellow', 'Red', 'White', 'Blue', 'Purple'],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],         price: 815 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -142,18 +122,13 @@ const PRODUCTS = {
     id: 'olivia',
     title: 'Olivia Family Set',
     price: 1160,
-    color: 'Peach Floral',
+    color: 'Peach',
     material: 'Cotton Floral • Peach',
     badge: 'OLIVIA',
     badgeClass: 'badge-pink',
     img: 'images/olivia.png',
     description: 'Fresh cotton floral with a cottagecore spirit. Olivia is made for families who love nature, warmth, and outfits that feel as good as they look.',
-    details: [
-      'Also available in: Red, Blue, Peach, Purple, Pink, Green, Orange',
-      'Mom Size: Medium – XXL',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Medium – XXL'
-    ],
+    colors: ['Peach', 'Red', 'Blue', 'Purple', 'Pink', 'Green', 'Orange'],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 815 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -170,12 +145,7 @@ const PRODUCTS = {
     badgeClass: 'badge-brown',
     img: 'images/ellery.png',
     description: 'Pastel linen that radiates sunshine. Ellery is our widest color selection — from Fuschia Pink to Royal Blue — making it easy to find the perfect shade for your family aesthetic.',
-    details: [
-      'Also available in: Red, Peach, Green, Yellow, White, Pink, Pastel Blue, Royal Blue, Purple, Cream, Black, Fuschia Pink',
-      'Mom Size: Medium – XXL',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Medium – XXL'
-    ],
+    colors: ['Pastel Yellow', 'Red', 'Peach', 'Green', 'White', 'Pink', 'Pastel Blue', 'Royal Blue', 'Purple', 'Cream', 'Black', 'Fuschia Pink'],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 835 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -191,13 +161,8 @@ const PRODUCTS = {
     badge: 'PAULA',
     badgeClass: 'badge-gold',
     img: 'images/paula.png',
-    description: 'Cotton with a muted, editorial tone. Paula is the go-to for families who prefer understated beauty — subtle, refined, and endlessly photogenic. Also available in Pastel Yellow, Pastel Purple, Emerald Green, and Red Maroon.',
-    details: [
-      'Also available in: Peach, Pastel Yellow, Pastel Purple, Emerald Green, Orange, Purple, Red Maroon',
-      'Mom Size: Medium – XXXL',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Medium – XXL'
-    ],
+    description: 'Cotton with a muted, editorial tone. Paula is the go-to for families who prefer understated beauty — subtle, refined, and endlessly photogenic.',
+    colors: ['Dusty Pink', 'Peach', 'Pastel Yellow', 'Pastel Purple', 'Emerald Green', 'Orange', 'Purple', 'Red Maroon'],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL', 'XXXL'], price: 785 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'],         price: 345 },
@@ -214,12 +179,7 @@ const PRODUCTS = {
     badgeClass: 'badge-pink',
     img: 'images/pinky.png',
     description: 'Bold linen coords with a modern, fashion-forward silhouette. Pinky Coords is for the family that dresses with intention — statement-making without trying too hard.',
-    details: [
-      'Also available in: Green, Fuschia Pink, Yellow, Purple, Black',
-      'Mom Size: Small – Large',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Medium – XXL'
-    ],
+    colors: ['Purple', 'Green', 'Fuschia Pink', 'Yellow', 'Black'],
     variants: {
       'Mom & Daughter Set': { sizes: ['S', 'M', 'L'],         price: 725 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -236,12 +196,7 @@ const PRODUCTS = {
     badgeClass: 'badge-brown',
     img: 'images/ailah.png',
     description: 'Earthy color cotton that feels as natural as it looks. Ailah is grounded, warm, and perfect for families who love the outdoors, parks, and relaxed weekend togetherness.',
-    details: [
-      'Also available in: Green, Rust',
-      'Mom Size: Medium – XXL',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Medium – XXL'
-    ],
+    colors: ['Green', 'Rust'],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 785 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -258,12 +213,7 @@ const PRODUCTS = {
     badgeClass: 'badge-gold',
     img: 'images/althea.png',
     description: 'Rich color cotton that turns heads at every gathering. Althea is your go-to for Christmas celebrations, family reunions, and every cherished milestone in between.',
-    details: [
-      'Also available in: Red, Brown, Blue, Pink',
-      'Mom Size: Medium – XXL',
-      'Daughter & Son Size: Small – Large',
-      'Dad Size: Medium – XXL'
-    ],
+    colors: ['Holiday Red', 'Brown', 'Blue', 'Pink'],
     variants: {
       'Mom & Daughter Set': { sizes: ['M', 'L', 'XL', 'XXL'], price: 745 },
       'Dad Shirt':          { sizes: ['M', 'L', 'XL', 'XXL'], price: 345 },
@@ -277,6 +227,7 @@ let currentProduct = null;
 let modalQty = 1;
 let selectedVariant = null;
 let selectedSize = null;
+let selectedColor = null;
 
 function openModal(productId) {
   const p = PRODUCTS[productId];
@@ -285,6 +236,7 @@ function openModal(productId) {
   modalQty = 1;
   selectedVariant = null;
   selectedSize = null;
+  selectedColor = null;
 
   const overlay = document.getElementById('modal-overlay');
   if (!overlay) return;
@@ -303,9 +255,16 @@ function openModal(productId) {
   imgEl.src = p.img;
   imgEl.alt = p.title;
 
-  // Details list
-  const list = document.getElementById('modal-details-list');
-  list.innerHTML = p.details.map(d => `<li>${d}</li>`).join('');
+  // Build color pills
+  const colorWrap = document.getElementById('modal-color-wrap');
+  if (colorWrap && p.colors && p.colors.length > 0) {
+    colorWrap.innerHTML = p.colors.map(c =>
+      `<button class="variant-pill color-pill" data-color="${c.replace(/"/g, '&quot;')}">${c}</button>`
+    ).join('');
+    colorWrap.querySelectorAll('.color-pill').forEach(btn => {
+      btn.addEventListener('click', () => selectColor(btn.dataset.color));
+    });
+  }
 
   // Build variant pills
   const variantWrap = document.getElementById('modal-variant-wrap');
@@ -313,8 +272,6 @@ function openModal(productId) {
     variantWrap.innerHTML = Object.keys(p.variants).map(v =>
       `<button class="variant-pill" data-variant="${v.replace(/"/g, '&quot;')}">${v}</button>`
     ).join('');
-
-    // Attach click listeners
     variantWrap.querySelectorAll('.variant-pill').forEach(btn => {
       btn.addEventListener('click', () => selectVariant(btn.dataset.variant));
     });
@@ -325,11 +282,20 @@ function openModal(productId) {
   if (sizeGroup) sizeGroup.style.display = 'none';
 
   // Clear old errors
+  hideModalError('modal-color-error');
   hideModalError('modal-variant-error');
   hideModalError('modal-size-error');
 
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+
+function selectColor(colorName) {
+  selectedColor = colorName;
+  hideModalError('modal-color-error');
+  document.querySelectorAll('#modal-color-wrap .color-pill').forEach(btn => {
+    btn.classList.toggle('selected', btn.dataset.color === colorName);
+  });
 }
 
 function selectVariant(variantName) {
@@ -356,11 +322,9 @@ function selectVariant(variantName) {
     sizeWrap.innerHTML = variantData.sizes.map(s =>
       `<button class="variant-pill" data-size="${s}">${s}</button>`
     ).join('');
-
     sizeWrap.querySelectorAll('.variant-pill').forEach(btn => {
       btn.addEventListener('click', () => selectSize(btn.dataset.size));
     });
-
     sizeGroup.style.display = 'block';
     hideModalError('modal-size-error');
   }
@@ -394,6 +358,14 @@ function changeModalQty(delta) {
 function modalAddToCart() {
   if (!currentProduct) return;
 
+  // Must select a color
+  if (currentProduct.colors && currentProduct.colors.length > 0 && !selectedColor) {
+    const errEl = document.getElementById('modal-color-error');
+    if (errEl) errEl.classList.add('visible');
+    showToast('Select a color', 'Please choose a color first.');
+    return;
+  }
+
   // Must select a variant
   if (currentProduct.variants && !selectedVariant) {
     const errEl = document.getElementById('modal-variant-error');
@@ -411,18 +383,18 @@ function modalAddToCart() {
   }
 
   const variantData = currentProduct.variants ? currentProduct.variants[selectedVariant] : null;
-  const cartKey = `${currentProduct.id}__${selectedVariant || 'default'}__${selectedSize || 'one-size'}`;
+  const cartKey = `${currentProduct.id}__${selectedColor || 'default'}__${selectedVariant || 'default'}__${selectedSize || 'one-size'}`;
+
+  const colorLabel  = selectedColor  ? ` • ${selectedColor}` : '';
+  const variantLabel = selectedVariant ? ` — ${selectedVariant}` : '';
+  const sizeLabel   = selectedSize   ? ` (Size ${selectedSize})` : '';
 
   const cartProduct = {
     ...currentProduct,
     cartKey,
     price:    variantData ? variantData.price : currentProduct.price,
-    title:    selectedVariant
-                ? `${currentProduct.title} — ${selectedVariant} (Size ${selectedSize})`
-                : currentProduct.title,
-    material: selectedSize
-                ? `${currentProduct.material} • Size ${selectedSize}`
-                : currentProduct.material
+    title:    `${currentProduct.title}${variantLabel}${sizeLabel}`,
+    material: `${currentProduct.material}${colorLabel}`
   };
 
   for (let i = 0; i < modalQty; i++) addToCart(cartProduct);
@@ -485,8 +457,8 @@ function applyPromo() {
   if (!input) return;
   const code = input.value.trim().toUpperCase();
   const valid = {
-    'MINIME10': { msg: '10% discount applied!',        pct: 0.10 },
-    'FAMILY20': { msg: '20% off for family sets!',     pct: 0.20 },
+    'MINIME10': { msg: '10% discount applied!',           pct: 0.10 },
+    'FAMILY20': { msg: '20% off for family sets!',        pct: 0.20 },
     'HOLIDAY':  { msg: 'Holiday discount applied! (15%)', pct: 0.15 }
   };
   if (valid[code]) {
@@ -499,7 +471,6 @@ function applyPromo() {
 }
 
 // ─── TOAST
-// Toast must fire AFTER DOM is ready; we keep a queue just in case
 let toastTimer = null;
 
 function showToast(title, subtitle) {
@@ -511,13 +482,9 @@ function showToast(title, subtitle) {
   if (titleEl) titleEl.textContent = title;
   if (subEl)   subEl.textContent   = subtitle || '';
 
-  // Clear any existing timer so overlapping calls restart the animation
   if (toastTimer) clearTimeout(toastTimer);
   toast.classList.remove('show');
-
-  // Force reflow so removing/re-adding .show always triggers the CSS transition
   void toast.offsetWidth;
-
   toast.classList.add('show');
   toastTimer = setTimeout(() => {
     toast.classList.remove('show');
@@ -538,21 +505,18 @@ function handleContact(e) {
 
   let valid = true;
 
-  // Name: letters and spaces only, minimum 2 characters
   const nameVal = nameEl.value.trim();
   if (!nameVal || !/^[A-Za-zÀ-ÿ\s]{2,}$/.test(nameVal)) {
     showFieldError(nameEl, 'err-contact-name');
     valid = false;
   }
 
-  // Email: must contain @ and a dot after it
   const emailVal = emailEl.value.trim();
   if (!emailVal || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
     showFieldError(emailEl, 'err-contact-email');
     valid = false;
   }
 
-  // Message: required
   if (!messageEl.value.trim()) {
     showFieldError(messageEl, 'err-contact-message');
     valid = false;
@@ -630,7 +594,6 @@ function closeCheckoutModal() {
 }
 
 function checkoutStep(step, skipValidation) {
-  // ── Validate Step 1 → 2
   if (step === 2 && !skipValidation) {
     const fname = document.getElementById('co-fname');
     const lname = document.getElementById('co-lname');
@@ -644,27 +607,19 @@ function checkoutStep(step, skipValidation) {
 
     let valid = true;
 
-    // Names: letters only
     if (!fname.value.trim() || !/^[A-Za-zÀ-ÿ\s]{1,}$/.test(fname.value.trim())) {
-      showFieldError(fname, 'err-fname');
-      valid = false;
+      showFieldError(fname, 'err-fname'); valid = false;
     }
     if (!lname.value.trim() || !/^[A-Za-zÀ-ÿ\s]{1,}$/.test(lname.value.trim())) {
-      showFieldError(lname, 'err-lname');
-      valid = false;
+      showFieldError(lname, 'err-lname'); valid = false;
     }
-
-    // Email
     if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
-      showFieldError(email, 'err-email');
-      valid = false;
+      showFieldError(email, 'err-email'); valid = false;
     }
 
-    // Phone: Philippine mobile (09xxxxxxxxx or +639xxxxxxxxx) or at least 10 digits
     const phoneVal = phone.value.trim().replace(/[\s\-()]/g, '');
     if (!phoneVal || !/^(\+?63|0)9\d{9}$/.test(phoneVal)) {
       showFieldError(phone, 'err-phone');
-      // Update error message text to be more helpful
       const phoneErrEl = document.getElementById('err-phone');
       if (phoneErrEl) phoneErrEl.textContent = 'Enter a valid PH number (e.g. 09XX XXX XXXX).';
       valid = false;
@@ -676,7 +631,6 @@ function checkoutStep(step, skipValidation) {
     }
   }
 
-  // ── Validate Step 2 → 3
   if (step === 3 && !skipValidation) {
     const region   = document.getElementById('co-region');
     const province = document.getElementById('co-province');
@@ -689,10 +643,10 @@ function checkoutStep(step, skipValidation) {
     });
 
     let valid = true;
-    if (!region.value)          { showFieldError(region,   'err-region');   valid = false; }
-    if (!province.value)        { showFieldError(province, 'err-province'); valid = false; }
-    if (!city.value)            { showFieldError(city,     'err-city');     valid = false; }
-    if (!address.value.trim())  { showFieldError(address,  'err-address');  valid = false; }
+    if (!region.value)         { showFieldError(region,   'err-region');   valid = false; }
+    if (!province.value)       { showFieldError(province, 'err-province'); valid = false; }
+    if (!city.value)           { showFieldError(city,     'err-city');     valid = false; }
+    if (!address.value.trim()) { showFieldError(address,  'err-address');  valid = false; }
 
     if (!valid) {
       showToast('Please complete your address', 'All address fields are required.');
@@ -700,17 +654,15 @@ function checkoutStep(step, skipValidation) {
     }
   }
 
-  // ── Show the right panel
   document.querySelectorAll('.checkout-step-panel').forEach(p => p.classList.add('hidden'));
   const panel = document.getElementById('checkout-step-' + step);
   if (panel) panel.classList.remove('hidden');
 
-  // ── Update step indicators
   document.querySelectorAll('.checkout-step[data-step]').forEach(el => {
     const s = parseInt(el.dataset.step);
     el.classList.remove('active', 'done');
-    if (s === step)      el.classList.add('active');
-    else if (s < step)   el.classList.add('done');
+    if (s === step)    el.classList.add('active');
+    else if (s < step) el.classList.add('done');
   });
 
   if (step === 3) buildOrderReview();
@@ -827,7 +779,6 @@ Sent via MiniMe Boutique website.`
 
 // ─── LOCATION DROPDOWNS
 const locationData = {
-  // LUZON
   'NCR': {
     provinces: {
       'Metro Manila': { cities: { 'Caloocan': '1400', 'Las Piñas': '1740', 'Makati': '1200', 'Malabon': '1470', 'Mandaluyong': '1550', 'Manila': '1000', 'Marikina': '1800', 'Muntinlupa': '1770', 'Navotas': '1485', 'Parañaque': '1700', 'Pasay': '1300', 'Pasig': '1600', 'Pateros': '1620', 'Quezon City': '1100', 'San Juan': '1500', 'Taguig': '1630', 'Valenzuela': '1440' } }
@@ -873,9 +824,9 @@ const locationData = {
   },
   'Region III (Central Luzon)': {
     provinces: {
-      'Bulacan':    { cities: { 'Malolos': '3000', 'Meycauayan': '3020', 'San Jose del Monte': '3023', 'Marilao': '3019', 'Bocaue': '3018', 'Balagtas': '3016' } },
-      'Pampanga':   { cities: { 'Angeles': '2009', 'San Fernando': '2000', 'Mabalacat': '2010', 'Porac': '2008', 'Guagua': '2003' } },
-      'Nueva Ecija':{ cities: { 'Cabanatuan': '3100', 'Palayan': '3132', 'San Jose': '3121', 'Gapan': '3105', 'Munoz': '3119' } }
+      'Bulacan':     { cities: { 'Malolos': '3000', 'Meycauayan': '3020', 'San Jose del Monte': '3023', 'Marilao': '3019', 'Bocaue': '3018', 'Balagtas': '3016' } },
+      'Pampanga':    { cities: { 'Angeles': '2009', 'San Fernando': '2000', 'Mabalacat': '2010', 'Porac': '2008', 'Guagua': '2003' } },
+      'Nueva Ecija': { cities: { 'Cabanatuan': '3100', 'Palayan': '3132', 'San Jose': '3121', 'Gapan': '3105', 'Munoz': '3119' } }
     }
   },
   'Region II (Cagayan Valley)': {
@@ -895,14 +846,13 @@ const locationData = {
       'Pangasinan':   { cities: { 'Dagupan': '2400', 'Urdaneta': '2428', 'San Carlos': '2420', 'Lingayen': '2401', 'Alaminos': '2404' } }
     }
   },
-  //VISAYAS
   'Region VI (Western Visayas)': {
     provinces: {
-      'Aklan':           { cities: { 'Kalibo': '5600', 'Malay': '5608', 'Numancia': '5604', 'Banga': '5601', 'Ibajay': '5605' } },
-      'Antique':         { cities: { 'San Jose de Buenavista': '5700', 'Hamtic': '5701', 'Culasi': '5708', 'Sibalom': '5702' } },
-      'Capiz':           { cities: { 'Roxas City': '5800', 'Panay': '5801', 'Pontevedra': '5802', 'Dumalag': '5813' } },
-      'Guimaras':        { cities: { 'Jordan': '5045', 'Buenavista': '5044', 'Nueva Valencia': '5046' } },
-      'Iloilo':          { cities: { 'Iloilo City': '5000', 'Oton': '5020', 'Passi City': '5037', 'Pavia': '5001', 'Santa Barbara': '5002', 'Dumangas': '5006' } },
+      'Aklan':             { cities: { 'Kalibo': '5600', 'Malay': '5608', 'Numancia': '5604', 'Banga': '5601', 'Ibajay': '5605' } },
+      'Antique':           { cities: { 'San Jose de Buenavista': '5700', 'Hamtic': '5701', 'Culasi': '5708', 'Sibalom': '5702' } },
+      'Capiz':             { cities: { 'Roxas City': '5800', 'Panay': '5801', 'Pontevedra': '5802', 'Dumalag': '5813' } },
+      'Guimaras':          { cities: { 'Jordan': '5045', 'Buenavista': '5044', 'Nueva Valencia': '5046' } },
+      'Iloilo':            { cities: { 'Iloilo City': '5000', 'Oton': '5020', 'Passi City': '5037', 'Pavia': '5001', 'Santa Barbara': '5002', 'Dumangas': '5006' } },
       'Negros Occidental': { cities: { 'Bacolod City': '6100', 'Talisay City': '6115', 'Silay City': '6116', 'Bago City': '6101', 'Kabankalan City': '6111', 'San Carlos City': '6127', 'Victorias City': '6119' } }
     }
   },
@@ -916,15 +866,14 @@ const locationData = {
   },
   'Region VIII (Eastern Visayas)': {
     provinces: {
-      'Biliran':         { cities: { 'Naval': '6543', 'Caibiran': '6544', 'Biliran': '6549', 'Kawayan': '6545' } },
-      'Eastern Samar':   { cities: { 'Borongan City': '6800', 'Guiuan': '6809', 'Dolores': '6817', 'Oras': '6818' } },
-      'Leyte':           { cities: { 'Tacloban City': '6500', 'Ormoc City': '6541', 'Baybay City': '6521', 'Palo': '6501', 'Tanauan': '6502', 'Abuyog': '6510' } },
-      'Northern Samar':  { cities: { 'Catarman': '6400', 'Laoang': '6411', 'Allen': '6405', 'Catubig': '6418' } },
-      'Samar':           { cities: { 'Catbalogan City': '6700', 'Calbayog City': '6710', 'Basey': '6702', 'Gandara': '6706' } },
-      'Southern Leyte':  { cities: { 'Maasin City': '6600', 'Sogod': '6606', 'Liloan': '6612', 'Hinunangan': '6608' } }
+      'Biliran':        { cities: { 'Naval': '6543', 'Caibiran': '6544', 'Biliran': '6549', 'Kawayan': '6545' } },
+      'Eastern Samar':  { cities: { 'Borongan City': '6800', 'Guiuan': '6809', 'Dolores': '6817', 'Oras': '6818' } },
+      'Leyte':          { cities: { 'Tacloban City': '6500', 'Ormoc City': '6541', 'Baybay City': '6521', 'Palo': '6501', 'Tanauan': '6502', 'Abuyog': '6510' } },
+      'Northern Samar': { cities: { 'Catarman': '6400', 'Laoang': '6411', 'Allen': '6405', 'Catubig': '6418' } },
+      'Samar':          { cities: { 'Catbalogan City': '6700', 'Calbayog City': '6710', 'Basey': '6702', 'Gandara': '6706' } },
+      'Southern Leyte': { cities: { 'Maasin City': '6600', 'Sogod': '6606', 'Liloan': '6612', 'Hinunangan': '6608' } }
     }
   },
-  //Mindanao
   'Region IX (Zamboanga Peninsula)': {
     provinces: {
       'Zamboanga del Norte': { cities: { 'Dipolog City': '7100', 'Dapitan City': '7101', 'Sindangan': '7112', 'Labason': '7117' } },
@@ -943,11 +892,11 @@ const locationData = {
   },
   'Region XI (Davao)': {
     provinces: {
-      'Davao de Oro':    { cities: { 'Nabunturan': '8800', 'Compostela': '8803', 'Monkayo': '8805', 'Pantukan': '8809' } },
-      'Davao del Norte': { cities: { 'Tagum City': '8100', 'Panabo City': '8105', 'Samal City': '8119', 'Carmen': '8101', 'Sto. Tomas': '8112' } },
-      'Davao del Sur':   { cities: { 'Davao City': '8000', 'Digos City': '8002', 'Santa Cruz': '8001', 'Bansalan': '8005' } },
-      'Davao Occidental':{ cities: { 'Malita': '8012', 'Don Marcelino': '8013', 'Jose Abad Santos': '8014' } },
-      'Davao Oriental':  { cities: { 'Mati City': '8200', 'Lupon': '8207', 'Baganga': '8204', 'Governor Generoso': '8210' } }
+      'Davao de Oro':     { cities: { 'Nabunturan': '8800', 'Compostela': '8803', 'Monkayo': '8805', 'Pantukan': '8809' } },
+      'Davao del Norte':  { cities: { 'Tagum City': '8100', 'Panabo City': '8105', 'Samal City': '8119', 'Carmen': '8101', 'Sto. Tomas': '8112' } },
+      'Davao del Sur':    { cities: { 'Davao City': '8000', 'Digos City': '8002', 'Santa Cruz': '8001', 'Bansalan': '8005' } },
+      'Davao Occidental': { cities: { 'Malita': '8012', 'Don Marcelino': '8013', 'Jose Abad Santos': '8014' } },
+      'Davao Oriental':   { cities: { 'Mati City': '8200', 'Lupon': '8207', 'Baganga': '8204', 'Governor Generoso': '8210' } }
     }
   },
   'Region XII (SOCCSKSARGEN)': {
@@ -969,12 +918,12 @@ const locationData = {
   },
   'BARMM': {
     provinces: {
-      'Basilan':         { cities: { 'Isabela City': '7300', 'Lamitan City': '7302', 'Maluso': '7303', 'Sumisip': '7305' } },
-      'Lanao del Sur':   { cities: { 'Marawi City': '9700', 'Wao': '9716', 'Balindong': '9703', 'Malabang': '9712' } },
+      'Basilan':               { cities: { 'Isabela City': '7300', 'Lamitan City': '7302', 'Maluso': '7303', 'Sumisip': '7305' } },
+      'Lanao del Sur':         { cities: { 'Marawi City': '9700', 'Wao': '9716', 'Balindong': '9703', 'Malabang': '9712' } },
       'Maguindanao del Norte': { cities: { 'Cotabato City': '9600', 'Datu Odin Sinsuat': '9601', 'Parang': '9604' } },
       'Maguindanao del Sur':   { cities: { 'Buluan': '9628', 'Sultan Kudarat': '9600', 'Shariff Aguak': '9608' } },
-      'Sulu':            { cities: { 'Jolo': '7400', 'Parang': '7404', 'Indanan': '7407', 'Talipao': '7409' } },
-      'Tawi-Tawi':       { cities: { 'Bongao': '7500', 'Sitangkai': '7506', 'Panglima Sugala': '7501' } }
+      'Sulu':                  { cities: { 'Jolo': '7400', 'Parang': '7404', 'Indanan': '7407', 'Talipao': '7409' } },
+      'Tawi-Tawi':             { cities: { 'Bongao': '7500', 'Sitangkai': '7506', 'Panglima Sugala': '7501' } }
     }
   }
 };
@@ -1052,7 +1001,6 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCartBadges();
   attachInputClearers();
 
-  // Product card clicks → open modal (whole card area)
   document.querySelectorAll('[data-product]').forEach(card => {
     card.addEventListener('click', () => openModal(card.dataset.product));
     card.addEventListener('keydown', e => {
@@ -1063,8 +1011,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // "Add to Cart" quick-add buttons on the cards should open the modal instead,
-  // so the user picks a variant & size first
   document.querySelectorAll('.product-add-btn').forEach(btn => {
     btn.addEventListener('click', e => {
       e.stopPropagation();
@@ -1073,7 +1019,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Nav page links
   document.querySelectorAll('[data-page]').forEach(el => {
     el.addEventListener('click', e => {
       e.preventDefault();
@@ -1084,7 +1029,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close product modal on backdrop click
   const modalOverlay = document.getElementById('modal-overlay');
   if (modalOverlay) {
     modalOverlay.addEventListener('click', e => {
@@ -1092,7 +1036,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Close checkout modal on backdrop click
   const checkoutOverlay = document.getElementById('checkout-overlay');
   if (checkoutOverlay) {
     checkoutOverlay.addEventListener('click', e => {
@@ -1107,23 +1050,24 @@ document.addEventListener('DOMContentLoaded', () => {
   showPage('home');
 });
 
-// ─── MOBILE MENU
+// ─── MOBILE MENU 
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const navLinks  = document.querySelector('.nav-links');
 
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('mobile-open');
-      hamburger.setAttribute('aria-expanded',
-        navLinks.classList.contains('mobile-open').toString()
-      );
+      const isOpen = navLinks.classList.toggle('mobile-open');
+      // Toggle active class on hamburger for CSS animation
+      hamburger.classList.toggle('active', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen.toString());
     });
   }
 
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('mobile-open');
+      hamburger?.classList.remove('active');
       hamburger?.setAttribute('aria-expanded', 'false');
     });
   });
