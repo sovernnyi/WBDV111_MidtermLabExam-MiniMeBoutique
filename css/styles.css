@@ -957,11 +957,13 @@ select.error {
 #cart-empty-state {
   text-align: center;
   padding: 80px 24px;
-  grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.cart-section:has(#cart-empty-state:not(.hidden)) {
+  grid-template-columns: 1fr;
 }
 #cart-empty-state svg {
   color: var(--pink-200);
