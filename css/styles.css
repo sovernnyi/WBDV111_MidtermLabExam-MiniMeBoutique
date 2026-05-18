@@ -5,6 +5,7 @@
   --pink-50:  #FFF0F5;
   --pink-100: #FFD6E7;
   --pink-200: #FFB3CF;
+  /* ... (keep the rest of colors here) ... */
   --pink-300: #FF8FB5;
   --pink-400: #F06292;
   --pink-accent: #E8779A;
@@ -72,14 +73,14 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Pushes logo to the left and links to the right */
   padding: 20px 48px;
   background: rgba(255, 249, 245, 0.97);
   border-bottom: 1px solid var(--border);
-  position: sticky;
+  position: sticky; /* Keeps the navbar visible while scrolling */
   top: 0;
   z-index: 100;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); /* Creates the modern blurred glass effect */
 }
 .nav-logo {
   font-family: 'Playfair Display', serif;
@@ -261,6 +262,8 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
 }
 .products-grid {
   display: grid;
+  /* Automatically creates 5 equal columns (1fr each). 
+     This is more efficient than using floats or flexbox for rigid grids. */
   grid-template-columns: repeat(5, 1fr);
   gap: 28px;
   max-width: 1400px;
@@ -268,6 +271,7 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
 }
 
 /* --- PRODUCT CARD --- */
+/* Adds smooth hover animations for product cards to increase user interactivity */
 .product-card {
   background: rgba(255,255,255,0.88);
   border: 1px solid var(--border);
@@ -1642,6 +1646,7 @@ select.error {
 @media (max-width: 1280px) {
   .products-grid { grid-template-columns: repeat(4,1fr); gap: 24px; }
 }
+/* --- TABLET VIEW (Max-width: 1024px) --- */
 @media (max-width: 1024px) {
   .products-grid    { grid-template-columns: repeat(3,1fr); }
   .families-grid    { grid-template-columns: repeat(2,1fr); }
@@ -1653,11 +1658,13 @@ select.error {
   .checkout-form-grid { grid-template-columns: 1fr; }
   .checkout-form-grid [style*="grid-column"] { grid-column: auto !important; }
 }
+/* --- MOBILE VIEW (Max-width: 768px) --- */
 @media (max-width: 768px) {
   .navbar           { padding: 16px 24px; }
-  .nav-links        { display: none; }
-  .hamburger        { display: flex; }
+  .nav-links        { display: none; } /* Hides desktop links */
+  .hamburger        { display: flex; } /* Shows mobile hamburger menu icon */
   .hero-card        { padding: 48px 32px; }
+  /* Adjusts the hero section text so it doesn't overflow on small phone screens */
   .hero-title       { font-size: 42px; }
   .hero-subtitle    { font-size: 13px; }
   .products-section,
@@ -1667,17 +1674,21 @@ select.error {
   .cart-section,
   .about-section,
   .contact-section  { padding-left: 24px; padding-right: 24px; }
+  /* Forces the product grid down to 2 columns for better visibility on mobile */
   .products-grid    { grid-template-columns: repeat(2,1fr); gap: 16px; }
   .families-grid    { grid-template-columns: 1fr; }
   .atelier-section  { flex-direction: column; }
   .footer-grid      { grid-template-columns: 1fr; }
   .footer           { padding: 48px 24px 36px; }
+  /* Stacks the modal image and text vertically instead of side-by-side */
   .modal-box        { flex-direction: column; max-height: 95vh; overflow-y: auto; }
   .modal-img-side   { flex: 0 0 240px; min-height: 240px; }
   .checkout-box     { padding: 32px 24px; }
   .product-name     { font-size: 18px; }
   .product-price    { font-size: 16px; }
 }
+/* --- SMALL MOBILE VIEW (Max-width: 480px) --- */
 @media (max-width: 480px) {
+  /* Forces a single column for very small devices */
   .products-grid    { grid-template-columns: 1fr; }
 }
