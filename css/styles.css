@@ -129,18 +129,39 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
 }
+
+/* --- HAMBURGER WITH ANIMATION --- */
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   padding: 4px;
+  cursor: pointer;
+  z-index: 110;
 }
 .hamburger span {
-  width: 22px; height: 2px;
+  width: 22px;
+  height: 2px;
   background: var(--text-dark);
   border-radius: 2px;
-  transition: all 0.3s;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity   0.25s ease,
+              background 0.25s ease;
+  display: block;
+  transform-origin: center;
 }
+/* Open state — X animation */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.hamburger.open span { background: var(--pink-accent); }
 
 /* --- HERO --- */
 .hero {
@@ -278,6 +299,8 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .product-card::before {
   content: '';
@@ -297,7 +320,7 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   aspect-ratio: 4/4;
   border-radius: 26px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .product-img-wrap img {
   width: 100%; height: 100%;
@@ -321,7 +344,14 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
 .badge-gold  { background: linear-gradient(135deg, var(--gold-600), var(--gold-400)); }
 .badge-pink  { background: linear-gradient(135deg, var(--pink-accent), var(--pink-300)); }
 .badge-brown { background: linear-gradient(135deg, var(--brown-soft), #8B6347); }
-.product-info { padding: 0 4px; }
+
+/* Product info — flex column so button always sticks to bottom */
+.product-info {
+  padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .product-name-row {
   display: flex;
   justify-content: space-between;
@@ -354,17 +384,10 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   background: linear-gradient(90deg, transparent, var(--border), transparent);
   margin-bottom: 14px;
 }
-.product-breakdown {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: var(--text-dark);
-  text-transform: uppercase;
-  margin-bottom: 18px;
-}
+
+/* Spacer pushes Add to Cart to the bottom of every card */
+.product-info-spacer { flex: 1; }
+
 .product-add-btn {
   width: 100%;
   background: linear-gradient(135deg, var(--pink-50) 0%, var(--gold-100) 100%);
@@ -379,6 +402,7 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   border-radius: 100px;
   transition: all 0.3s;
   display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin-top: 16px;
 }
 .product-add-btn:hover {
   background: linear-gradient(135deg, var(--pink-accent) 0%, var(--pink-400) 100%);
@@ -667,19 +691,10 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   font-size: 24px;
   font-style: italic;
   color: var(--text-mid);
-  margin-bottom: 16px;
-}
-
-/* Modal description */
-.modal-description {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 14px;
-  color: var(--text-mid);
-  line-height: 1.8;
   margin-bottom: 20px;
 }
 
+/* Item information label */
 .modal-details-label {
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
@@ -687,31 +702,20 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: var(--text-soft);
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   display: block;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
 }
-.modal-details-list { margin-bottom: 28px; }
-.modal-details-list li {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-dark);
-  padding: 9px 0;
-  border-bottom: 1px solid rgba(200,168,100,0.12);
-}
-.modal-details-list li::before {
-  content: '';
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--pink-accent), var(--gold-400));
-  flex-shrink: 0;
+
+/* Item info as flowing italic text */
+.modal-details-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.85;
+  margin-bottom: 24px;
 }
 
 /* Modal select label */
@@ -725,7 +729,7 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   margin-bottom: 10px;
 }
 
-/* Variant / size pills */
+/* Variant / size / color pills */
 .modal-pills-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -756,6 +760,33 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   color: white;
   border-color: transparent;
   box-shadow: 0 4px 14px var(--shadow-pink);
+}
+
+/* Color swatch pills */
+.color-pill {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 100px;
+  border: 1.5px solid var(--border);
+  background: var(--warm-white);
+  color: var(--text-mid);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.color-pill:hover {
+  border-color: var(--pink-accent);
+  color: var(--pink-accent);
+  background: var(--pink-50);
+}
+.color-pill.selected {
+  background: linear-gradient(135deg, var(--gold-600), var(--gold-500));
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 14px var(--shadow-gold);
 }
 
 /* Qty selector */
@@ -820,10 +851,10 @@ h1, h2, h3  { font-family: 'Cormorant Garamond', serif; }
   color: #c0392b;
   letter-spacing: 0.03em;
   margin-top: 6px;
-  display: none;           /* hidden by default */
+  display: none;
 }
 .field-error.visible {
-  display: block;          /* shown when .visible is added */
+  display: block;
 }
 .form-input.error,
 .form-textarea.error,
@@ -949,15 +980,17 @@ select.error {
 }
 .cart-remove-btn:hover { color: #c0392b; }
 
-/* Empty cart state */
+/* --- EMPTY CART STATE (centered in all views) --- */
 #cart-empty-state {
   text-align: center;
   padding: 80px 24px;
-  grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* span both grid columns so it sits centred on laptop/desktop */
+  grid-column: 1 / -1;
+  width: 100%;
 }
 #cart-empty-state svg {
   color: var(--pink-200);
@@ -1309,7 +1342,7 @@ select.error {
   align-items: center;
   gap: 12px;
   box-shadow: 0 16px 48px -8px var(--shadow-pink);
-  z-index: 99999;              /* ← raised above all modals */
+  z-index: 99999;
   transform: translateY(80px);
   opacity: 0;
   transition: transform 0.4s cubic-bezier(0.4,0,0.2,1),
