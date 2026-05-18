@@ -81,8 +81,7 @@ const PRODUCTS = {
     badge: 'KRIZZEL',
     badgeClass: 'badge-pink',
     img: 'images/krizzel.png',
-    description: 'Clean, crisp white cotton linen for the whole family. The Krizzel twin set is our most versatile collection — effortlessly elegant for beach trips, family events, or Sunday outings. Also available in Indigo, Purple, Red, and Forest Green.',
-    breakdown: [['Twin Set (Mom)', '₱815'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
+    description: 'Clean, crisp white cotton linen for the whole family. The Krizzel twin set is our most versatile collection — effortlessly elegant for beach trips, family events, or Sunday outings.',
     details: [
       'Also available in: Indigo, Purple, Red, Forest Green',
       'Mom Size: Medium – XXL',
@@ -104,8 +103,7 @@ const PRODUCTS = {
     badge: 'MIA',
     badgeClass: 'badge-brown',
     img: 'images/mia.png',
-    description: 'Sophisticated black with hand-inspired flower embroidery. The Mia set makes a bold statement — timeless, elegant, and completely unforgettable in photos. Available in Nude, White, Black, and Red.',
-    breakdown: [['Mom & Daughter', '₱795'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
+    description: 'Sophisticated black with hand-inspired flower embroidery. The Mia set makes a bold statement — timeless, elegant, and completely unforgettable in photos.',
     details: [
       'Also available in: Nude, White, Black, Red',
       'Mom Size: Small – Large',
@@ -127,8 +125,7 @@ const PRODUCTS = {
     badge: 'EULA',
     badgeClass: 'badge-gold',
     img: 'images/eula.png',
-    description: 'Soft blush pink linen that catches the light beautifully. The Eula set is airy, romantic, and perfect for golden hour family shoots or intimate celebrations. Also available in Yellow, Red, White, Blue, and Purple.',
-    breakdown: [['Mom & Daughter', '₱815'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
+    description: 'Soft blush pink linen that catches the light beautifully. The Eula set is airy, romantic, and perfect for golden hour family shoots or intimate celebrations.',
     details: [
       'Also available in: Yellow, Red, White, Pink, Blue, Purple',
       'Mom Size: Small – Large',
@@ -150,8 +147,7 @@ const PRODUCTS = {
     badge: 'OLIVIA',
     badgeClass: 'badge-pink',
     img: 'images/olivia.png',
-    description: 'Fresh peach cotton floral with a cottagecore spirit. Olivia is made for families who love nature, warmth, and outfits that feel as good as they look. Available in Red, Blue, Purple, Pink, Green, and Orange.',
-    breakdown: [['Mom & Daughter', '₱815'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
+    description: 'Fresh cotton floral with a cottagecore spirit. Olivia is made for families who love nature, warmth, and outfits that feel as good as they look.',
     details: [
       'Also available in: Red, Blue, Peach, Purple, Pink, Green, Orange',
       'Mom Size: Medium – XXL',
@@ -173,8 +169,7 @@ const PRODUCTS = {
     badge: 'ELLERY',
     badgeClass: 'badge-brown',
     img: 'images/ellery.png',
-    description: 'Pastel yellow linen that radiates sunshine. Ellery is our widest color selection — from Fuschia Pink to Royal Blue — making it easy to find the perfect shade for your family aesthetic.',
-    breakdown: [['Mom & Daughter', '₱835'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
+    description: 'Pastel linen that radiates sunshine. Ellery is our widest color selection — from Fuschia Pink to Royal Blue — making it easy to find the perfect shade for your family aesthetic.',
     details: [
       'Also available in: Red, Peach, Green, Yellow, White, Pink, Pastel Blue, Royal Blue, Purple, Cream, Black, Fuschia Pink',
       'Mom Size: Medium – XXL',
@@ -196,8 +191,7 @@ const PRODUCTS = {
     badge: 'PAULA',
     badgeClass: 'badge-gold',
     img: 'images/paula.png',
-    description: 'Dusty pink cotton with a muted, editorial tone. Paula is the go-to for families who prefer understated beauty — subtle, refined, and endlessly photogenic. Also available in Pastel Yellow, Pastel Purple, Emerald Green, and Red Maroon.',
-    breakdown: [['Mom & Daughter', '₱785'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
+    description: 'Cotton with a muted, editorial tone. Paula is the go-to for families who prefer understated beauty — subtle, refined, and endlessly photogenic. Also available in Pastel Yellow, Pastel Purple, Emerald Green, and Red Maroon.',
     details: [
       'Also available in: Peach, Pastel Yellow, Pastel Purple, Emerald Green, Orange, Purple, Red Maroon',
       'Mom Size: Medium – XXXL',
@@ -219,8 +213,7 @@ const PRODUCTS = {
     badge: 'PINKY COORDS',
     badgeClass: 'badge-pink',
     img: 'images/pinky.png',
-    description: 'Bold purple linen coords with a modern, fashion-forward silhouette. Pinky Coords is for the family that dresses with intention — statement-making without trying too hard. Also available in Green, Fuschia Pink, Yellow, and Black.',
-    breakdown: [['Mom & Daughter', '₱725'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
+    description: 'Bold linen coords with a modern, fashion-forward silhouette. Pinky Coords is for the family that dresses with intention — statement-making without trying too hard.',
     details: [
       'Also available in: Green, Fuschia Pink, Yellow, Purple, Black',
       'Mom Size: Small – Large',
@@ -242,8 +235,7 @@ const PRODUCTS = {
     badge: 'AILAH',
     badgeClass: 'badge-brown',
     img: 'images/ailah.png',
-    description: 'Earthy green cotton that feels as natural as it looks. Ailah is grounded, warm, and perfect for families who love the outdoors, parks, and relaxed weekend togetherness. Also available in Rust.',
-    breakdown: [['Mom & Daughter', '₱785'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
+    description: 'Earthy color cotton that feels as natural as it looks. Ailah is grounded, warm, and perfect for families who love the outdoors, parks, and relaxed weekend togetherness.',
     details: [
       'Also available in: Green, Rust',
       'Mom Size: Medium – XXL',
@@ -265,8 +257,7 @@ const PRODUCTS = {
     badge: 'ALTHEA',
     badgeClass: 'badge-gold',
     img: 'images/althea.png',
-    description: 'Rich holiday red cotton that turns heads at every gathering. Althea is your go-to for Christmas celebrations, family reunions, and every cherished milestone in between. Also available in Brown, Blue, and Pink.',
-    breakdown: [['Mom & Daughter', '₱745'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
+    description: 'Rich color cotton that turns heads at every gathering. Althea is your go-to for Christmas celebrations, family reunions, and every cherished milestone in between.',
     details: [
       'Also available in: Red, Brown, Blue, Pink',
       'Mom Size: Medium – XXL',
