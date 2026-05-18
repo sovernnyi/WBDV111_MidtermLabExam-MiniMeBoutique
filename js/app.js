@@ -60,6 +60,7 @@ const PRODUCTS = {
     badgeClass: 'badge-gold',
     img: 'images/sandra.png',
     description: 'The Sandra set features a delicate floral print — perfect for family portraits and special occasions. Light and breathable, it drapes beautifully on every body type.',
+    breakdown: [['Mom & Daughter', '₱825'], ['Dad Shirt', '₱345'], ["Son's Set", '₱245']],
     details: [
       'Also available in: Peach Pink, Purple, Denim Blue, Yellow',
       'Mom Size: Small – XL',
